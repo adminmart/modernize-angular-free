@@ -247,11 +247,11 @@ export class AppDashboardComponent {
         },
       },
       plotOptions: {
-        bar: { horizontal: false, columnWidth: '35%', borderRadius: [8] },
+        bar: { horizontal: false, columnWidth: '35%', borderRadius: [4] },
       },
       chart: {
         type: 'bar',
-        height: 380,
+        height: 390,
         offsetX: -15,
         toolbar: { show: true },
         foreColor: '#adb0bb',
