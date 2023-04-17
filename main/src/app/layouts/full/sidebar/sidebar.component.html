@@ -1,0 +1,29 @@
+<div class="flex-layout">
+  <app-branding></app-branding>
+  <mat-nav-list class="sidebar-list">
+    <app-nav-item *ngFor="let item of navItems" [item]="item"> </app-nav-item>
+  </mat-nav-list>
+  <div class="p-24 m-t-auto">
+    <div class="bg-light-primary d-flex align-items-center rounded p-20 m-t-20">
+      <div>
+        <h5 class="mat-subtitle-1 f-s-16 f-w-600 m-b-8">
+          Unlimied <br />Access
+        </h5>
+        <a
+          mat-flat-button
+          color="primary"
+          href="https://adminmart.com/product/modernize-angular-admin-dashboard/"
+          target="_blank"
+          class="d-flex justify-content-center"
+        >
+          Upgrade
+        </a>
+      </div>
+      <img
+        src="/assets/images/backgrounds/rocket.png"
+        alt="imgae"
+        class="side-img"
+      />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="bg-light-primary rounded p-y-30 p-x-24 m-b-30 overflow-hidden" *ngIf="  pageInfo?.['title'] != 'Analytical' && pageInfo?.['title'] != 'eCommerce'">
+  <div class="row">
+    <div class="col-sm-8">
+      <h4 class="page-title m-0 f-s-20 f-w-600 m-b-16">
+        {{ pageInfo?.['title'] }}
+      </h4>
+      <div class="d-flex align-items-center overflow-hidden">
+        <ng-template
+          ngFor
+          let-url
+          [ngForOf]="pageInfo?.['urls']"
+          let-last="last"
+        >
+          <li class="breadcrumb-item" *ngIf="!last" [routerLink]="url.url">
+            <a [routerLink]="url.url">{{ url.title }}</a>
+          </li>
+          <li class="breadcrumb-item active" *ngIf="last">{{ url.title }}</li>
+        </ng-template>
+      </div>
+    </div>
+    <div class="col-sm-4 text-right position-relative">
+      <div class="breadcrumb-icon">
+        <img
+          src="/assets/images/breadcrumb/ChatBc.png"
+          alt="breadcrumb"
+          width="165"
+        />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,351 @@
+<div class="row">
+  <!-- --------------------------------------------------------------------------- -->
+  <!-- Sales Overview -->
+  <!-- --------------------------------------------------------------------------- -->
+  <div class="col-lg-8">
+    <mat-card class="cardWithShadow">
+      <mat-card-content class="p-24">
+        <div class="d-flex w-100">
+          <mat-card-title>Sales Overview</mat-card-title>
+          <div class="m-l-auto">
+            <mat-form-field class="theme-select" appearance="outline">
+              <mat-select value="mar">
+                <mat-option *ngFor="let month of months" [value]="month.value">
+                  {{ month.viewValue }}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+        <apx-chart
+          [series]="salesOverviewChart.series"
+          [dataLabels]="salesOverviewChart.dataLabels"
+          [chart]="salesOverviewChart.chart"
+          [legend]="salesOverviewChart.legend"
+          [xaxis]="salesOverviewChart.xaxis"
+          [yaxis]="salesOverviewChart.yaxis"
+          [grid]="salesOverviewChart.grid"
+          [stroke]="salesOverviewChart.stroke"
+          [tooltip]="salesOverviewChart.tooltip"
+          [plotOptions]="salesOverviewChart.plotOptions"
+        ></apx-chart>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <!-- --------------------------------------------------------------------------- -->
+  <!-- end Sales overview -->
+  <!-- --------------------------------------------------------------------------- -->
+  <div class="col-lg-4">
+    <div class="row">
+      <!-- --------------------------------------------------------------------------- -->
+      <!-- Yearly Breakup -->
+      <!-- --------------------------------------------------------------------------- -->
+      <div class="col-lg-12 col-sm-6">
+        <mat-card class="cardWithShadow">
+          <mat-card-content class="p-24">
+            <mat-card-title>Yearly Breakup</mat-card-title>
+            <div class="row m-t-24">
+              <div class="col-7">
+                <h4 class="mat-headline-5">$36,358</h4>
+                <div class="d-flex align-items-center m-t-16">
+                  <button
+                    mat-mini-fab
+                    class="bg-light-success text-success shadow-none icon-27"
+                  >
+                    <i-tabler name="arrow-up-right" class="icon-20"></i-tabler>
+                  </button>
+                  <div class="mat-body-1 f-w-600 m-l-12">+9%</div>
+                  <div class="mat-body-1 m-l-4">last year</div>
+                </div>
+
+                <div class="d-flex align-items-center m-t-32">
+                  <div class="d-flex align-items-center">
+                    <i-tabler
+                      name="circle-filled"
+                      class="text-primary icon-12 d-flex"
+                    ></i-tabler>
+                    <div class="mat-body-1 m-l-12">2023</div>
+                  </div>
+                  <div class="d-flex align-items-center m-l-16">
+                    <i-tabler
+                      name="circle-filled"
+                      class="text-light-primary icon-12 d-flex"
+                    ></i-tabler>
+                    <div class="mat-body-1 m-l-12">2022</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5 d-flex align-items-start">
+                <apx-chart
+                  [series]="yearlyChart.series"
+                  [dataLabels]="yearlyChart.dataLabels"
+                  [chart]="yearlyChart.chart"
+                  [legend]="yearlyChart.legend"
+                  [colors]="yearlyChart.colors"
+                  [stroke]="yearlyChart.stroke"
+                  [tooltip]="yearlyChart.tooltip"
+                  [plotOptions]="yearlyChart.plotOptions"
+                  [responsive]="yearlyChart.responsive"
+                ></apx-chart>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <!-- --------------------------------------------------------------------------- -->
+      <!-- Monthly Earnings -->
+      <!-- --------------------------------------------------------------------------- -->
+      <div class="col-lg-12 col-sm-6">
+        <mat-card class="cardWithShadow">
+          <mat-card-header class="d-flex align-items-center p-x-24">
+            <mat-card-title>Monthly Earnings</mat-card-title>
+            <div class="m-l-auto">
+              <button mat-fab color="accent" class="shadow-none icon-48">
+                <i-tabler
+                  name="currency-dollar"
+                  class="text-white d-flex"
+                ></i-tabler>
+              </button>
+            </div>
+          </mat-card-header>
+          <mat-card-content class="m-b-32 p-x-24">
+            <h4 class="mat-headline-5">$6,820</h4>
+            <div class="d-flex align-items-center m-t-16">
+              <button
+                mat-mini-fab
+                class="bg-light-error text-error shadow-none icon-27"
+              >
+                <i-tabler name="arrow-down-right" class="icon-20"></i-tabler>
+              </button>
+              <div class="mat-body-1 f-w-600 m-l-12">+9%</div>
+              <div class="mat-body-1 m-l-4">last year</div>
+            </div>
+          </mat-card-content>
+          <apx-chart
+            [series]="monthlyChart.series"
+            [dataLabels]="monthlyChart.dataLabels"
+            [chart]="monthlyChart.chart"
+            [legend]="monthlyChart.legend"
+            [colors]="monthlyChart.colors"
+            [stroke]="monthlyChart.stroke"
+            [tooltip]="monthlyChart.tooltip"
+            [plotOptions]="monthlyChart.plotOptions"
+            [responsive]="monthlyChart.responsive"
+          ></apx-chart>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <mat-card class="cardWithShadow">
+      <mat-card-content class="p-24">
+        <mat-card-title>Recent Transactions</mat-card-title>
+
+        <div class="timeline m-t-24">
+          <div
+            class="timeline-item d-flex overflow-hidden"
+            *ngFor="let stat of stats"
+          >
+            <div class="time text-right mat-subtitle-1 f-s-14">
+              {{ stat.time }}
+            </div>
+            <div class="point d-flex align-items-center">
+              <span class="timeline-badge border-{{ stat.color }} m-y-8"></span>
+              <span class="timline-border d-block"></span>
+            </div>
+            <div class="desc">
+              <ng-template [ngIf]="stat.subtext">
+                <span class="mat-subtitle-1 f-s-14 lh-20">{{
+                  stat.subtext
+                }}</span>
+              </ng-template>
+              <ng-template [ngIf]="stat.title">
+                <span class="mat-subtitle-1 f-s-14 lh-20 f-w-600 d-block">{{
+                  stat.title
+                }}</span>
+              </ng-template>
+              <ng-template [ngIf]="stat.link">
+                <a href="#" class="text-primary text-decoration-none mat-body-1"
+                  >#ML-3467</a
+                >
+              </ng-template>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="col-lg-8">
+    <mat-card class="cardWithShadow">
+      <mat-card-content class="p-24">
+        <mat-card-title>Top Projects</mat-card-title>
+        <div class="table-responsive m-t-16">
+          <table mat-table [dataSource]="dataSource" class="w-100">
+            <!-- Position Column -->
+            <ng-container matColumnDef="assigned">
+              <th
+                mat-header-cell
+                *matHeaderCellDef
+                class="f-w-600 mat-subtitle-1 f-s-14"
+              >
+                Assigned
+              </th>
+              <td mat-cell *matCellDef="let element">
+                <div class="d-flex align-items-center">
+                  <img
+                    [src]="element.imagePath"
+                    alt="users"
+                    width="40"
+                    class="rounded-circle"
+                  />
+                  <div class="m-l-16">
+                    <h6 class="mat-subtitle-1 f-s-14 f-w-600">
+                      {{ element.uname }}
+                    </h6>
+                    <span class="mat-body-1 f-s-12">
+                      {{ element.position }}
+                    </span>
+                  </div>
+                </div>
+              </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+              <th
+                mat-header-cell
+                *matHeaderCellDef
+                class="f-w-600 mat-subtitle-1 f-s-14"
+              >
+                Name
+              </th>
+              <td mat-cell *matCellDef="let element" class="mat-body-1">
+                {{ element.productName }}
+              </td>
+            </ng-container>
+
+            <!-- Weight Column -->
+            <ng-container matColumnDef="priority">
+              <th
+                mat-header-cell
+                *matHeaderCellDef
+                class="f-w-600 mat-subtitle-1 f-s-14"
+              >
+                Priority
+              </th>
+              <td mat-cell *matCellDef="let element">
+                <ng-template [ngIf]="element.priority == 'low'">
+                  <span
+                    class="bg-light-accent text-accent rounded f-w-600 p-6 p-y-4 f-s-12"
+                  >
+                    {{ element.priority | titlecase }}
+                  </span>
+                </ng-template>
+                <ng-template [ngIf]="element.priority == 'medium'">
+                  <span
+                    class="bg-light-primary text-primary rounded f-w-600 p-6 p-y-4 f-s-12"
+                  >
+                    {{ element.priority | titlecase }}
+                  </span>
+                </ng-template>
+                <ng-template [ngIf]="element.priority == 'high'">
+                  <span
+                    class="bg-light-warning text-warning rounded f-w-600 p-6 p-y-4 f-s-12"
+                  >
+                    {{ element.priority | titlecase }}
+                  </span>
+                </ng-template>
+                <ng-template [ngIf]="element.priority == 'critical'">
+                  <span
+                    class="bg-light-error text-error rounded f-w-600 p-6 p-y-4 f-s-12"
+                  >
+                    {{ element.priority | titlecase }}
+                  </span>
+                </ng-template>
+                <ng-template [ngIf]="element.priority == 'moderate'">
+                  <span
+                    class="bg-light-success text-success rounded f-w-600 p-6 p-y-4 f-s-12"
+                  >
+                    {{ element.priority | titlecase }}
+                  </span>
+                </ng-template>
+              </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="budget">
+              <th
+                mat-header-cell
+                *matHeaderCellDef
+                class="f-w-600 mat-subtitle-1 f-s-14"
+              >
+                Budget
+              </th>
+              <td mat-cell *matCellDef="let element" class="mat-body-1">
+                ${{ element.budget }}k
+              </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+          </table>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6 col-lg-3" *ngFor="let productcard of productcards">
+    <mat-card class="cardWithShadow productcard overflow-hidden">
+      <a routerLink="/widgets/cards">
+        <img
+          src="{{ productcard.imgSrc }}"
+          alt="imgSrc"
+          class="w-100"
+          mat-card-image
+        />
+      </a>
+      <mat-card-content class="p-b-24 p-t-12 position-relative">
+        <button
+          mat-mini-fab
+          color="primary"
+          class="icon-30 cart-btn"
+          matTooltip="Add to Cart"
+        >
+          <i-tabler name="basket" class="icon-16"></i-tabler>
+        </button>
+        <mat-card-title class="mat-headline-2 f-s-16 m-b-4">{{
+          productcard.title
+        }}</mat-card-title>
+        <div class="d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <h6 class="mat-body-2 f-w-600">${{ productcard.price }}</h6>
+            <span class="f-s-14 m-l-4 text-decoration-line-through"
+              >${{ productcard.rprice }}</span
+            >
+          </div>
+          <div class="m-l-auto d-flex gap-4">
+            <span
+              ><i-tabler name="star" class="fill-warning icon-18"></i-tabler
+            ></span>
+            <span
+              ><i-tabler name="star" class="fill-warning icon-18"></i-tabler
+            ></span>
+            <span
+              ><i-tabler name="star" class="fill-warning icon-18"></i-tabler
+            ></span>
+            <span
+              ><i-tabler name="star" class="fill-warning icon-18"></i-tabler
+            ></span>
+            <span
+              ><i-tabler name="star" class="fill-warning icon-18"></i-tabler
+            ></span>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
