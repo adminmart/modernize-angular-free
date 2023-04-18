@@ -27,7 +27,6 @@
             "styles": [
               "src/styles.scss",
               "src/assets/scss/style.scss",
-              "node_modules/perfect-scrollbar/css/perfect-scrollbar.css"
             ],
             "scripts": []
           },
