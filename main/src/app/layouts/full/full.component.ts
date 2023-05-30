@@ -15,7 +15,7 @@ const MONITOR_VIEW = 'screen and (min-width: 1024px)';
 export class FullComponent implements OnInit {
 
   @ViewChild('leftsidenav')
-  public sidenav: MatSidenav;
+  public sidenav: MatSidenav | any;
 
   //get options from service
   private layoutChangesSubscription = Subscription.EMPTY;
