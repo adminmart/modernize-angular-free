@@ -1,0 +1,57 @@
+<mat-card class="cardWithShadow theme-card">
+  <mat-card-header>
+    <mat-card-title class="m-b-0">Badges</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="b-t-1">
+    <mat-card class="b-1 shadow-none">
+      <mat-card-content>
+        <p>
+          <span matBadge="4" matBadgeOverlap="false" class="f-w-500 text-muted">Text with a badge</span>
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="b-1 shadow-none">
+      <mat-card-content>
+        <p>
+          <span matBadge="4" matBadgeOverlap="false" matBadgeSize="large" class="f-w-500 text-muted">Text with large
+            badge</span>
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="b-1 shadow-none">
+      <mat-card-content>
+        <p class="f-w-500 text-muted">
+          Button with a badge on the left
+          <button mat-flat-button color="primary" matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+            Action
+          </button>
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="b-1 shadow-none">
+      <mat-card-content>
+        <p class="f-w-500 text-muted">
+          Icon with a badge
+          <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="b-1 shadow-none">
+      <mat-card-content>
+        <p>
+          Button toggles badge visibility
+          <button mat-flat-button color="primary" matBadge="7" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
+            Hide
+          </button>
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+
+
+  </mat-card-content>
+</mat-card>
