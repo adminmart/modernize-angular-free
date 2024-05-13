@@ -196,17 +196,17 @@ Modernize Angular Admin Dashboard
 
 <!-- Licensing of Template -->
 # Licensing
-- <p>Copyright 2024 Wrappixel <a href="https://www.wrappixel.com/">https://wrappixel.com/</a></p>
-- <p>Licensed under MIT <a href="https://www.wrappixel.com/license/">https://wrappixel.com/license/</a></p>
+- <p>Copyright 2024 Adminmart <a href="https://adminmart.com/">https://adminmart.com/</a></p>
+- <p>Licensed under MIT <a href="https://adminmart.com/license/">https://adminmart.com/license/</a></p>
 
 
 <!-- Social Media of Adminmart -->
 # Social Media 👭🏼
-- <p>Facebook: <a href="https://www.facebook.com/wrappixel">https://www.facebook.com/wrappixel</a></p>
-- <p>Linkedin: <a href="https://www.linkedin.com/company/wrappixel/">https://www.linkedin.com/company/wrappixel/</a></p>
-- <p>Github: <a href="https://github.com/wrappixel">https://github.com/wrappixel</a></p>
-- <p>Twitter: <a href="https://twitter.com/wrappixel">https://twitter.com/wrappixel</a></p>
-- <p>Medium: <a href="https://medium.com/wrappixel">https://medium.com/wrappixel</a></p>
-- <p>Discord: <a href="https://discord.com/invite/eMzE8F6Wqs">https://discord.com/invite/eMzE8F6Wqs</a></p>
-- <p>Youtube: <a href="https://www.youtube.com/channel/UCdFDlrhIchtxF8EmxejUPGQ">https://www.youtube.com/channel/UCdFDlrhIchtxF8EmxejUPGQ</a></p>
+- <p>Facebook: <a href="https://www.facebook.com/official.adminmart">https://www.facebook.com/official.adminmart</a></p>
+- <p>Linkedin: <a href="https://www.linkedin.com/in/admin-mart-5ba892249/">https://www.linkedin.com/in/admin-mart-5ba892249/</a></p>
+- <p>Github: <a href="https://github.com/adminmart">https://github.com/adminmart</a></p>
+- <p>Instagram: <a href="https://www.instagram.com/adminmart.official/">https://www.instagram.com/adminmart.official/</a></p>
+- <p>Quora: <a href="https://www.quora.com/profile/Adminmart">https://www.quora.com/profile/Adminmart</a></p>
+- <p>Discord: <a href="https://discord.com/invite/XujgB8ww4n">https://discord.com/invite/XujgB8ww4n</a></p>
+- <p>Reddit: <a href="https://www.reddit.com/user/adminmart/?rdt=35853">https://www.reddit.com/user/adminmart/?rdt=35853</a></p>
 
