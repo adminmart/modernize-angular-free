@@ -1,9 +1,9 @@
-# <a href="https://demos.wrappixel.com/free-admin-templates/angular/xtreme-angular-free/angular/dashboard">Xtreme Admin Angular Free</a>
-Xtreme Angular Admin Dashboard
+# <a href="https://modernize-angular-free.netlify.app/dashboard">Modernize Admin Angular Free</a>
+Modernize Angular Admin Dashboard
 
 <!-- Main image of Template -->
-<a target="_blank" href="https://www.wrappixel.com/templates/xtreme-angular-lite/">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/xtreme-angular-lite-y.jpg" />
+<a target="_blank" href="https://adminmart.com/product/modernize-free-angular-material-template/">
+  <img src="https://adminmart.com/wp-content/uploads/2023/04/modernize-free-angular-material-admin-dashboard-min.png" />
 </a>
 
 
@@ -19,7 +19,7 @@ Xtreme Angular Admin Dashboard
 <tbody>
 <tr>
   <td>
-    <a href="https://demos.wrappixel.com/free-admin-templates/angular/xtreme-angular-free/angular/dashboard">Live Preview</a>
+    <a href="https://modernize-angular-free.netlify.app/dashboard">Live Preview</a>
   </td>
   <td>
   <a href="https://demos.wrappixel.com/free-admin-templates/angular/xtreme-angular-free/landingpage/index.html">Live Preview</a>
