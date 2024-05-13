@@ -22,15 +22,15 @@ Modernize Angular Admin Dashboard
     <a href="https://modernize-angular-free.netlify.app/dashboard">Live Preview</a>
   </td>
   <td>
-  <a href="https://demos.wrappixel.com/free-admin-templates/angular/xtreme-angular-free/landingpage/index.html">Live Preview</a>
+  <a href="https://demos.adminmart.com/free/angular/modernize-angular-free/landingpage/index.html">Live Preview</a>
   </td>
 </tr>
 <tr>
   <td>
-      <a href="https://www.wrappixel.com/templates/adminpro-vuetify-admin-lite/">Download Now</a>
+      <a href="https://adminmart.com/product/modernize-free-angular-material-template/">Download Now</a>
   </td>
   <td>
-    <a href="https://www.wrappixel.com/templates/xtreme-angular-admin/">Purchase Now</a>
+    <a href="https://adminmart.com/product/modernize-angular-material-dashboard/">Purchase Now</a>
   </td>
 </tr>
 <tr>
@@ -38,7 +38,7 @@ Modernize Angular Admin Dashboard
   1 Basic Dashboard
   </td>
   <td>
-  3+ Stunning Dashboards
+  2+ Stunning Dashboards
   </td>
 </tr>
 <tr>
@@ -51,7 +51,7 @@ Modernize Angular Admin Dashboard
 </tr>
 <tr>
   <td>
-  Angular 16 Version
+  Angular 17 Version
   </td>
   <td>
   Angular 17 Version
@@ -67,7 +67,7 @@ Modernize Angular Admin Dashboard
 </tr>
 <tr>
   <td>
-  7+ Pages Template
+  10+ Pages Template
   </td>
   <td>
   80+ Page Templates
@@ -75,10 +75,10 @@ Modernize Angular Admin Dashboard
 </tr>
 <tr>
   <td>
-  10+ UI Components
+  5+ UI Components
   </td>
   <td>
-  60+ UI Components
+  50+ UI Components
   </td>
 </tr>
 <tr>
@@ -134,12 +134,12 @@ Modernize Angular Admin Dashboard
 
 # Upgrade to Premium version
 
-<a target="_blank" href="https://www.wrappixel.com/templates/xtreme-angular-admin/">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/xtreme-angular-admin-y.jpg" alt="">
+<a target="_blank" href="https://adminmart.com/product/modernize-angular-material-dashboard/">
+  <img src="https://adminmart.com/wp-content/uploads/2023/04/modernize-angular-material-admin-dashboard-template-1-1.jpg" alt="">
 </a>
 <p>
-  Checkout our premium version of Xtreme Angular Admin Dashboard Template for lots more features and ready to use page templates.<br>
-  <a href="https://demos.wrappixel.com/free-admin-templates/angular/xtreme-angular-free/landingpage/index.html">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/xtreme-angular-admin/">Download</a>
+  Checkout our premium version of Modernize Angular Admin Dashboard Template for lots more features and ready to use page templates.<br>
+  <a href="https://demos.adminmart.com/free/angular/modernize-angular-free/landingpage/index.html">Check Live Preview</a> | <a href="https://adminmart.com/product/modernize-angular-material-dashboard/">Download</a>
 </p>
 
 <!-- Versions of Template -->
@@ -156,23 +156,23 @@ Modernize Angular Admin Dashboard
 <tbody>
 <tr>
 <td>
-  <a href="https://www.wrappixel.com/templates/xtremeadmin/" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/xtreme-bootstrap-admin-y.jpg" alt="" style="max-width:150px;">
+  <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/" width="150px">
+    <img src="https://adminmart.com/wp-content/uploads/2023/02/modernize-bootstrap-5-admin-template-min.png" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/xtreme-react-redux-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/xtreme-react-admin-template-y.jpg" alt="" style="max-width:150px;">
+  <a href="https://adminmart.com/product/modernize-react-mui-dashboard-theme/" rel="nofollow" width="150px">
+    <img src="https://adminmart.com/wp-content/uploads/2023/01/image_2023_01_26T10_19_25_019Z-min.png" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/xtreme-nextjs-admin-dashboard/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/02/xtreme-nextjs-image.jpg" alt="" style="max-width:150px;">
+  <a href="https://adminmart.com/product/modernize-next-js-admin-dashboard/" rel="nofollow" width="150px">
+    <img src="https://adminmart.com/wp-content/uploads/2023/03/modernize-next-js-admin-dashboard-1-min-1.png" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/xtreme-vuesax-admin-pro/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/xtreme-vuesax-admin-y.jpg" alt="" style="max-width:150px;">
+  <a href="https://adminmart.com/product/modernize-vuetify-vue-admin-dashboard/" rel="nofollow" width="150px">
+    <img src="https://adminmart.com/wp-content/uploads/2023/02/modernize-vuetify-admin-dashboard-min.png" alt="" style="max-width:150px;">
   </a>
 </td>
 </td>
@@ -187,7 +187,7 @@ Modernize Angular Admin Dashboard
 
 <!-- Useful Links of Template -->
 # Useful Links
-- <p><a href="https://www.wrappixel.com/">Admin Theme</a> from Wrappixel</p>
+- <p><a href="https://adminmart.com/">Admin Theme</a> from Adminmart</p>
 - <p><a href="https://www.wrappixel.com/templates/materialpro/">Bootstrap Themes</a> from Wrappixel</p>
 - <p><a href="https://www.wrappixel.com/templates/materialpro-lite/">Free Bootstrap Admin Templates</a> from Wrappixel</p>
 - <p><a href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/">React Bootstrap Template</a> from Wrappixel</p>
