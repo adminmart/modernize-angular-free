@@ -12,8 +12,8 @@ Modernize Angular Admin Dashboard
 <table>
 <thead>
 <tr>
-<th>Xtreme Free Angular Admin Version</th>
-<th>Xtreme Angular Admin Version</th>
+<th>Modernize Free Angular Admin Version</th>
+<th>Modernize Angular Admin Version</th>
 </tr>
 </thead>
 <tbody>
