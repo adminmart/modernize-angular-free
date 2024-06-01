@@ -30,7 +30,7 @@ Modernize Angular Admin Dashboard
       <a href="https://adminmart.com/product/modernize-free-angular-material-template/">Download Now</a>
   </td>
   <td>
-    <a href="https://adminmart.com/product/modernize-angular-material-dashboard/">Purchase Now</a>
+    <a href="https://adminmart.com/product/modernize-angular-material-dashboard/?ref=5">Purchase Now</a>
   </td>
 </tr>
 <tr>
@@ -134,12 +134,12 @@ Modernize Angular Admin Dashboard
 
 # Upgrade to Premium version
 
-<a target="_blank" href="https://adminmart.com/product/modernize-angular-material-dashboard/">
+<a target="_blank" href="https://adminmart.com/product/modernize-angular-material-dashboard/?ref=5">
   <img src="https://adminmart.com/wp-content/uploads/2023/04/modernize-angular-material-admin-dashboard-template-1-1.jpg" alt="">
 </a>
 <p>
   Checkout our premium version of Modernize Angular Admin Dashboard Template for lots more features and ready to use page templates.<br>
-  <a href="https://demos.adminmart.com/free/angular/modernize-angular-free/landingpage/index.html">Check Live Preview</a> | <a href="https://adminmart.com/product/modernize-angular-material-dashboard/">Download</a>
+  <a href="https://demos.adminmart.com/free/angular/modernize-angular-free/landingpage/index.html">Check Live Preview</a> | <a href="https://adminmart.com/product/modernize-angular-material-dashboard/?ref=5">Download</a>
 </p>
 
 <!-- Versions of Template -->
@@ -147,7 +147,7 @@ Modernize Angular Admin Dashboard
 <table>
 <thead>
 <tr>
-<th>Bootstrap</th>
+<th>Angular</th>
 <th>React Js</th>
 <th>Next Js</th>
 <th>Vue Js</th>
@@ -156,22 +156,22 @@ Modernize Angular Admin Dashboard
 <tbody>
 <tr>
 <td>
-  <a href="https://adminmart.com/product/modernize-bootstrap-5-admin-template/" width="150px">
-    <img src="https://adminmart.com/wp-content/uploads/2023/02/modernize-bootstrap-5-admin-template-min.png" alt="" style="max-width:150px;">
+  <a href="https://adminmart.com/product/modernize-angular-material-dashboard/?ref=5" width="150px">
+    <img src="https://adminmart.com/wp-content/uploads/2023/04/modernize-angular-material-admin-dashboard-template-1-1.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://adminmart.com/product/modernize-react-mui-dashboard-theme/" rel="nofollow" width="150px">
+  <a href="https://adminmart.com/product/modernize-react-mui-dashboard-theme/?ref=5" rel="nofollow" width="150px">
     <img src="https://adminmart.com/wp-content/uploads/2023/01/image_2023_01_26T10_19_25_019Z-min.png" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://adminmart.com/product/modernize-next-js-admin-dashboard/" rel="nofollow" width="150px">
+  <a href="https://adminmart.com/product/modernize-next-js-admin-dashboard/?ref=5" rel="nofollow" width="150px">
     <img src="https://adminmart.com/wp-content/uploads/2023/03/modernize-next-js-admin-dashboard-1-min-1.png" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://adminmart.com/product/modernize-vuetify-vue-admin-dashboard/" rel="nofollow" width="150px">
+  <a href="https://adminmart.com/product/modernize-vuetify-vue-admin-dashboard/?ref=5" rel="nofollow" width="150px">
     <img src="https://adminmart.com/wp-content/uploads/2023/02/modernize-vuetify-admin-dashboard-min.png" alt="" style="max-width:150px;">
   </a>
 </td>
