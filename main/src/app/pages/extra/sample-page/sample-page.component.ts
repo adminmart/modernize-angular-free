@@ -1,14 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { MaterialModule } from '../../../material.module';
 
 @Component({
   selector: 'app-sample-page',
-  templateUrl: './sample-page.component.html'
+  standalone: true,
+  imports: [MaterialModule],
+  templateUrl: './sample-page.component.html',
 })
-export class AppSamplePageComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class AppSamplePageComponent { }

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "testApp": {
+    "Modernize": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,11 +17,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [
-              "ng-apexcharts",
-              "apexcharts"
-            ],
-            "outputPath": "dist/modernize",
+            "allowedCommonJsDependencies": ["apexcharts", "bezier-easing", "moment"],
+            "outputPath": "dist/Modernize",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -44,13 +41,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500mb",
-                  "maximumError": "500mb"
+                  "maximumWarning": "12mb",
+                  "maximumError": "12mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "12mb",
+                  "maximumError": "12mb"
                 }
               ],
               "outputHashing": "all"
@@ -70,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "testApp:build:production"
+              "buildTarget": "Modernize:build:production"
             },
             "development": {
-              "browserTarget": "testApp:build:development"
+              "buildTarget": "Modernize:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -81,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "testApp:build"
+            "buildTarget": "Modernize:build"
           }
         },
         "test": {

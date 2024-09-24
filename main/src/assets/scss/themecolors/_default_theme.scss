@@ -1,3 +1,4 @@
+
 $mat-primary: (
   100: white,
   500: #5d87ff,
@@ -20,7 +21,7 @@ $mat-secondary: (
 );
 
 $mat-warn: (
-  100: FDEDE8,
+  100: #FDEDE8,
   500: #fa896b,
   700: #f3704d,
   contrast: (
@@ -30,11 +31,11 @@ $mat-warn: (
   ),
 );
 
-$theme-primary: mat.define-palette($mat-primary, 500);
-$theme-accent: mat.define-palette($mat-secondary, 500);
-$theme-warn: mat.define-palette($mat-warn, 500);
+$theme-primary: mat.m2-define-palette($mat-primary, 500);
+$theme-accent: mat.m2-define-palette($mat-secondary, 500);
+$theme-warn: mat.m2-define-palette($mat-warn, 500);
 
-$bluetheme: mat.define-light-theme(
+$bluetheme: mat.m2-define-light-theme(
   (
     color: (
       primary: $theme-primary,
@@ -42,19 +43,64 @@ $bluetheme: mat.define-light-theme(
       warn: $theme-warn,
     ),
     typography:
-      mat.define-typography-config(
+      mat.m2-define-typography-config(
         $font-family: "Plus Jakarta Sans",
-        $subtitle-2: mat.define-typography-level(14px, 14px, 400),
-        $subtitle-1: mat.define-typography-level(21px, 26px, 500),
-        $headline-6: mat.define-typography-level(18px, 26px, 600),
-        $headline-5: mat.define-typography-level(24px, 30px, 700),
-        $button: mat.define-typography-level(14px, 14px, 400),
-        $body-1: mat.define-typography-level(14px, 20px, 400),
-        $body-2: mat.define-typography-level(16px, 22px, 400),
+        $subtitle-2: mat.m2-define-typography-level(14px, 14px, 400),
+        $subtitle-1: mat.m2-define-typography-level(21px, 26px, 500),
+        $headline-6: mat.m2-define-typography-level(18px, 26px, 600),
+        $headline-5: mat.m2-define-typography-level(24px, 30px, 700),
+        $button: mat.m2-define-typography-level(14px, 14px, 400),
+        $body-1: mat.m2-define-typography-level(14px, 20px, 400),
+        $body-2: mat.m2-define-typography-level(16px, 22px, 400),
+      ),
+  )
+);
+
+$darkbluetheme: mat.m2-define-dark-theme(
+  (
+    color: (
+      primary: $theme-primary,
+      accent: $theme-accent,
+      warn: $theme-warn,
+    ),
+    typography:
+      mat.m2-define-typography-config(
+        $font-family: "Plus Jakarta Sans",
+        $subtitle-2: mat.m2-define-typography-level(14px, 14px, 400),
+        $subtitle-1: mat.m2-define-typography-level(21px, 26px, 500),
+        $headline-6: mat.m2-define-typography-level(18px, 26px, 600),
+        $headline-5: mat.m2-define-typography-level(24px, 30px, 700),
+        $button: mat.m2-define-typography-level(14px, 14px, 400),
+        $body-1: mat.m2-define-typography-level(14px, 20px, 400),
+        $body-2: mat.m2-define-typography-level(16px, 22px, 400),
       ),
   )
 );
 
 .bg-primary {
-  background: mat.get-color-from-palette($theme-primary, 500) !important;
+  background: mat.m2-get-color-from-palette($theme-primary, 500) !important;
+}
+
+.horizontal-navbar .parentBox.pactive > a,
+.horizontal-navbar .parentBox.pactive > a:hover,
+.horizontal-navbar .parentBox.pactive:hover > a {
+  background-color: mat.m2-get-color-from-palette($theme-primary, 500) !important;
+}
+
+.activeMenu {
+  background-color: mat.m2-get-color-from-palette($theme-primary, 500) !important;
+}
+
+
+
+.mat-mdc-outlined-button {
+  &.mat-primary {
+    border-color: mat.m2-get-color-from-palette($theme-primary, 500) !important;
+  }
+  &.mat-accent {
+    border-color: mat.m2-get-color-from-palette($theme-accent, 500) !important;
+  }
+  &.mat-warn {
+    border-color: mat.m2-get-color-from-palette($theme-warn, 500) !important;
+  }
 }

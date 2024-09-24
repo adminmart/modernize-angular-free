@@ -2,7 +2,6 @@
 @include mat.core();
 
 @import "variables";
-@import "layouts/transitions";
 @import "helpers/color";
 @import "helpers/icon-size";
 
@@ -23,4 +22,3 @@
 // pages
 @import "pages/dashboards";
 @import "pages/auth";
-

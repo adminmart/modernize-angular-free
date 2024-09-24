@@ -5,18 +5,14 @@
   <mat-card-content class="b-t-1">
     <mat-card class="b-1 shadow-none">
       <mat-card-content>
-        <p>
-          <span matBadge="4" matBadgeOverlap="false" class="f-w-500 text-muted">Text with a badge</span>
-        </p>
+        <div matBadge="4" matBadgeOverlap="false" class="d-inline">Text with a badge</div>
       </mat-card-content>
     </mat-card>
 
     <mat-card class="b-1 shadow-none">
       <mat-card-content>
-        <p>
-          <span matBadge="4" matBadgeOverlap="false" matBadgeSize="large" class="f-w-500 text-muted">Text with large
-            badge</span>
-        </p>
+        <div matBadge="1" matBadgeSize="small" class="d-inline">Text with small badge</div><br /><br />
+        <div matBadge="1" matBadgeSize="large" class="d-inline">Text with large badge</div>
       </mat-card-content>
     </mat-card>
 
@@ -44,7 +40,8 @@
       <mat-card-content>
         <p>
           Button toggles badge visibility
-          <button mat-flat-button color="primary" matBadge="7" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
+          <button mat-flat-button color="primary" matBadge="7" [matBadgeHidden]="hidden"
+            (click)="toggleBadgeVisibility()">
             Hide
           </button>
         </p>

@@ -40,7 +40,7 @@
             <mat-card-title>Avatar</mat-card-title>
           </mat-card-header>
           <mat-card-content class="b-t-1">
-            <mat-chip-listbox aria-label="Dog selection">
+            <mat-chip-set aria-label="Dog selection">
               <mat-chip class="f-s-14">
                 <img
                   matChipAvatar
@@ -65,7 +65,7 @@
                 />
                 Mathew
               </mat-chip>
-            </mat-chip-listbox>
+            </mat-chip-set>
           </mat-card-content>
         </mat-card>
       </div>
@@ -86,13 +86,11 @@
               cdkDropListOrientation="horizontal"
               (cdkDropListDropped)="drop($event)"
             >
-              <mat-chip
-                class="example-box f-s-14"
-                cdkDrag
-                *ngFor="let vegetable of vegetables"
-              >
-                {{ vegetable.name }}
-              </mat-chip>
+              @for (vegetable of vegetables(); track vegetable.name) {
+              <mat-chip class="example-box" cdkDrag>{{
+                vegetable.name
+              }}</mat-chip>
+              }
             </mat-chip-set>
           </mat-card-content>
         </mat-card>
@@ -107,10 +105,15 @@
             <mat-card-title>Stacked </mat-card-title>
           </mat-card-header>
           <mat-card-content class="b-t-1">
-            <mat-chip-listbox class="mat-mdc-chip-set-stacked" aria-label="Color selection">
-              <mat-chip-option *ngFor="let chip of availableColors" selected [color]="chip.color">
-                {{chip.name}}
+            <mat-chip-listbox
+              class="mat-mdc-chip-set-stacked"
+              aria-label="Color selection"
+            >
+              @for(chip of availableColors; track chip.color) {
+              <mat-chip-option selected [color]="chip.color">
+                {{ chip.name }}
               </mat-chip-option>
+              }
             </mat-chip-listbox>
           </mat-card-content>
         </mat-card>
@@ -129,12 +132,13 @@
             <mat-form-field appearance="outline" class="w-100">
               <mat-label>Favorite Fruits</mat-label>
               <mat-chip-grid #chipGrid aria-label="Enter fruits">
+                @for(fruit of fruits; track fruit.name) {
                 <mat-chip-row
-                  *ngFor="let fruit of fruits"
                   (removed)="remove(fruit)"
                   [editable]="true"
                   (edited)="edit(fruit, $event)"
-                  [aria-description]="'press enter to edit ' + fruit.name" class="f-s-14"
+                  [aria-description]="'press enter to edit ' + fruit.name"
+                  class="f-s-14"
                 >
                   {{ fruit.name }}
                   <button
@@ -144,6 +148,8 @@
                     <mat-icon>cancel</mat-icon>
                   </button>
                 </mat-chip-row>
+                }
+
                 <input
                   placeholder="New fruit..."
                   [matChipInputFor]="chipGrid"
@@ -153,6 +159,63 @@
                 />
               </mat-chip-grid>
             </mat-form-field>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <div class="col-12">
+        <!-- ------------------------------------------------------------------------- -->
+        <!-- Form Control -->
+        <!-- ------------------------------------------------------------------------- -->
+
+        <mat-card class="b-1 shadow-none">
+          <mat-card-header>
+            <mat-card-title>Form Control</mat-card-title>
+          </mat-card-header>
+          <mat-card-content class="b-t-1">
+            <div class="d-flex gap-8">
+              <button
+                mat-stroked-button
+                color="primary"
+                (click)="formControl.disable()"
+              >
+                Disable form control
+              </button>
+              <button
+                mat-raised-button
+                color="primary"
+                (click)="formControl.enable()"
+              >
+                Enable form control
+              </button>
+            </div>
+            <mat-form-field appearance="outline" class="w-100 m-t-20">
+              <mat-label>Video keywords</mat-label>
+              <mat-chip-grid
+                #formChip
+                aria-label="Enter keywords"
+                [formControl]="formControl"
+              >
+                @for (keyword of keywords(); track keyword) {
+                <mat-chip-row (removed)="removeKeyword(keyword)">
+                  {{ keyword }}
+                  <button matChipRemove aria-label="'remove ' + keyword">
+                    <mat-icon>cancel</mat-icon>
+                  </button>
+                </mat-chip-row>
+                }
+              </mat-chip-grid>
+              <input
+                placeholder="New keyword..."
+                [matChipInputFor]="formChip"
+                (matChipInputTokenEnd)="addForm($event)"
+              />
+            </mat-form-field>
+
+            <p>
+              <span class="f-w-600">The following keywords are entered:</span>
+              {{ formControl.value }}
+            </p>
           </mat-card-content>
         </mat-card>
       </div>

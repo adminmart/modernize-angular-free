@@ -113,9 +113,11 @@
           </mat-card-header>
           <mat-card-content class="b-t-1">
             <mat-selection-list #shoes>
-              <mat-list-option *ngFor="let shoe of typesOfShoes">
+              @for(shoe of typesOfShoes; track shoe) {
+              <mat-list-option>
                 {{ shoe }}
               </mat-list-option>
+              }
             </mat-selection-list>
 
             <p class="mat-subtitle-2 f-w-600 p-16 bg-light-primary rounded">
@@ -135,9 +137,11 @@
           </mat-card-header>
           <mat-card-content class="b-t-1">
             <mat-selection-list #shoes2 [multiple]="false">
-              <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe">
+              @for(shoe of typesOfShoes; track shoe) {
+              <mat-list-option [value]="shoe">
                 {{ shoe }}
               </mat-list-option>
+              }
             </mat-selection-list>
 
             <p class="mat-subtitle-2 f-w-600 p-16 bg-light-primary rounded">
@@ -163,18 +167,31 @@
           <mat-card-content class="b-t-1">
             <mat-list>
               <div mat-subheader class="mat-body-2 m-b-16 f-w-600">Folders</div>
-              <mat-list-item *ngFor="let folder of folders">
+              @for(folder of folders; track folder.name) {
+              <mat-list-item>
                 <mat-icon matListItemIcon>folder</mat-icon>
-                <div matListItemTitle class="mat-body-2 f-w-600">{{ folder.name }}</div>
-                <div matListItemLine class="f-s-14 mat-body-1">{{ folder.updated | date }}</div>
+                <div matListItemTitle class="mat-body-2 f-w-600">
+                  {{ folder.name }}
+                </div>
+                <div matListItemLine class="f-s-14 mat-body-1">
+                  {{ folder.updated | date }}
+                </div>
               </mat-list-item>
+              }
+
               <mat-divider></mat-divider>
               <div mat-subheader class="mat-body-2 m-y-16 f-w-600">Notes</div>
-              <mat-list-item *ngFor="let note of notes">
+              @for(note of notes; track note.name) {
+              <mat-list-item>
                 <mat-icon matListItemIcon>note</mat-icon>
-                <div matListItemTitle class="mat-body-2 f-w-600">{{ note.name }}</div>
-                <div matListItemLine class="f-s-14 mat-body-1">{{ note.updated | date }}</div>
+                <div matListItemTitle class="mat-body-2 f-w-600">
+                  {{ note.name }}
+                </div>
+                <div matListItemLine class="f-s-14 mat-body-1">
+                  {{ note.updated | date }}
+                </div>
               </mat-list-item>
+              }
             </mat-list>
           </mat-card-content>
         </mat-card>

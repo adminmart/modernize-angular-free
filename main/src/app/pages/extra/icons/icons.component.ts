@@ -1,14 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { MaterialModule } from '../../../material.module';
 
 @Component({
   selector: 'app-icons',
-  templateUrl: './icons.component.html'
+  standalone: true,
+  imports: [MaterialModule],
+  templateUrl: './icons.component.html',
 })
-export class AppIconsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class AppIconsComponent { }

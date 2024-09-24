@@ -23,6 +23,7 @@ $spacers: (
   32: $spacer * 2,
   48: $spacer * 3,
 ) !default;
+$negative-spacers: negativify-map($spacers) !default;
 
 // Border
 

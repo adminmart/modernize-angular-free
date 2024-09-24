@@ -6,7 +6,7 @@ export const navItems: NavItem[] = [
   },
   {
     displayName: 'Dashboard',
-    iconName: 'layout-dashboard',
+    iconName: 'layout-grid-add',
     route: '/dashboard',
   },
   {
@@ -14,35 +14,45 @@ export const navItems: NavItem[] = [
   },
   {
     displayName: 'Badge',
-    iconName: 'rosette',
+    iconName: 'archive',
     route: '/ui-components/badge',
   },
   {
     displayName: 'Chips',
-    iconName: 'poker-chip',
+    iconName: 'info-circle',
     route: '/ui-components/chips',
   },
   {
     displayName: 'Lists',
-    iconName: 'list',
+    iconName: 'list-details',
     route: '/ui-components/lists',
   },
   {
     displayName: 'Menu',
-    iconName: 'layout-navbar-expand',
+    iconName: 'file-text',
     route: '/ui-components/menu',
   },
   {
     displayName: 'Tooltips',
-    iconName: 'tooltip',
+    iconName: 'file-text-ai',
     route: '/ui-components/tooltips',
+  },
+  {
+    displayName: 'Forms',
+    iconName: 'clipboard-text',
+    route: '/ui-components/forms',
+  },
+  {
+    displayName: 'Tables',
+    iconName: 'table',
+    route: '/ui-components/tables',
   },
   {
     navCap: 'Auth',
   },
   {
     displayName: 'Login',
-    iconName: 'lock',
+    iconName: 'login',
     route: '/authentication/login',
   },
   {
@@ -60,7 +70,7 @@ export const navItems: NavItem[] = [
   },
   {
     displayName: 'Sample Page',
-    iconName: 'aperture',
+    iconName: 'brand-dribbble',
     route: '/extra/sample-page',
   },
 ];
