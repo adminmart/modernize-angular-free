@@ -60,7 +60,6 @@ interface month {
 
 @Component({
   selector: 'app-product-performance',
-  standalone: true,
   imports: [
     NgApexchartsModule,
     MaterialModule,
@@ -74,8 +73,8 @@ export class AppProductPerformanceComponent {
   dataSource = ELEMENT_DATA;
 
   months: month[] = [
-    { value: 'mar', viewValue: 'March 2023' },
-    { value: 'apr', viewValue: 'April 2023' },
-    { value: 'june', viewValue: 'June 2023' },
+    { value: 'mar', viewValue: 'March 2025' },
+    { value: 'apr', viewValue: 'April 2025' },
+    { value: 'june', viewValue: 'June 2025' },
   ];
 }

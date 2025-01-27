@@ -16,8 +16,8 @@ import {
 } from '@angular/router';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideClientHydration } from '@angular/platform-browser';
-// import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-// import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 // icons
 import { TablerIconsModule } from 'angular-tabler-icons';
@@ -29,10 +29,6 @@ import { NgScrollbarModule } from 'ngx-scrollbar';
 //Import all material modules
 import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-// export function HttpLoaderFactory(http: HttpClient): any {
-//   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
-// }
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -54,13 +50,6 @@ export const appConfig: ApplicationConfig = {
       MaterialModule,
       TablerIconsModule.pick(TablerIcons),
       NgScrollbarModule,
-      // TranslateModule.forRoot({
-      //   loader: {
-      //     provide: TranslateLoader,
-      //     useFactory: HttpLoaderFactory,
-      //     deps: [HttpClient],
-      //   }, 
-      // })
     ),
   ],
 };

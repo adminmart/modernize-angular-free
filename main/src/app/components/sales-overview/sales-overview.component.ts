@@ -43,7 +43,6 @@ export interface salesOverviewChart {
 
 @Component({
   selector: 'app-sales-overview',
-  standalone: true,
   imports: [MaterialModule, TablerIconsModule, NgApexchartsModule, MatButtonModule],
   templateUrl: './sales-overview.component.html',
 })
@@ -54,9 +53,9 @@ export class AppSalesOverviewComponent {
   public salesOverviewChart!: Partial<salesOverviewChart> | any;
 
   months: month[] = [
-    { value: 'mar', viewValue: 'Sep 2024' },
-    { value: 'apr', viewValue: 'Oct 2024' },
-    { value: 'june', viewValue: 'Nov 2024' },
+    { value: 'mar', viewValue: 'Sep 2025' },
+    { value: 'apr', viewValue: 'Oct 2025' },
+    { value: 'june', viewValue: 'Nov 2025' },
   ];
 
 
@@ -93,7 +92,7 @@ export class AppSalesOverviewComponent {
         type: 'bar',
         height: 390,
         offsetX: -15,
-        toolbar: { show: true },
+        toolbar: { show: false },
         foreColor: '#adb0bb',
         fontFamily: 'inherit',
         sparkline: { enabled: false },

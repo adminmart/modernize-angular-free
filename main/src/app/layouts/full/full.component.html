@@ -1,8 +1,9 @@
-<mat-sidenav-container class="mainWrapper blue_theme  light-theme" autosize autoFocus dir="ltr">
+
+<app-topstrip></app-topstrip>
+<mat-sidenav-container class="mainWrapper blue_theme light-theme" autosize autoFocus dir="ltr">
   <!-- ============================================================== -->
   <!-- Vertical Sidebar -->
   <!-- ============================================================== -->
-  
   <mat-sidenav #leftsidenav [mode]="isOver ? 'over' : 'side'" [opened]="!isOver"
     (openedChange)="onSidenavOpenedChange($event)" (closedStart)="onSidenavClosedStart()" class="sidebarNav">
     <div class="flex-layout">
@@ -16,25 +17,23 @@
         </mat-nav-list>
       </ng-scrollbar>
       <div class="p-24">
-        <div class="bg-light-primary d-flex align-items-center gap-4 rounded p-20 m-t-20">
+        <div class="bg-light-secondary d-flex align-items-center gap-4 rounded p-20 m-t-20">
           <div>
-            <h5 class="mat-subtitle-1 f-s-16 f-w-600 m-b-8">
-              Unlimied <br />Access
+            <h5 class="f-s-16 f-w-600 m-b-8">
+              Check Pro <br> Version
             </h5>
-            <a mat-flat-button color="primary"
-              href="https://adminmart.com/product/modernize-angular-material-dashboard/?ref=5" target="_blank"
-              class="d-flex justify-content-center">
-              Upgrade
+            <a mat-flat-button
+              href="https://adminmart.com/product/modernize-angular-material-dashboard/?ref=56" target="_blank"
+              class="d-flex justify-content-center bg-secondary">
+              Check
             </a>
           </div>
-          <img src="/assets/images/backgrounds/rocket.png" alt="imgae" class="side-img m-t--48" />
+          <img src="/assets/images/backgrounds/rocket.png" alt="imgae" class="side-img m-t--48 m-r--8" />
         </div>
       </div>
     </div>
   </mat-sidenav>
-
-
-
+  
   <!-- ============================================================== -->
   <!-- Main Content -->
   <!-- ============================================================== -->
@@ -42,17 +41,15 @@
     <!-- ============================================================== -->
     <!-- VerticalHeader -->
     <!-- ============================================================== -->
-
-    <app-header [showToggle]="!isOver" (toggleCollapsed)="toggleCollapsed()"
-      (toggleMobileNav)="sidenav.toggle()"></app-header>
-
-
+    
+    <app-header [showToggle]="!isOver" (toggleMobileNav)="sidenav.toggle()"></app-header>
+    
     <main class="pageWrapper maxWidth">
-        <!-- ============================================================== -->
-        <!-- Outlet -->
-        <!-- ============================================================== -->
-        <router-outlet></router-outlet>
-      </main>
+      <!-- ============================================================== -->
+      <!-- Outlet -->
+      <!-- ============================================================== -->
+      <router-outlet></router-outlet>
+    </main>
   </mat-sidenav-content>
 
 </mat-sidenav-container>

@@ -7,6 +7,7 @@ $columns: 48;
     .icon-#{$i} {
       height: #{$i}px !important;
       width: #{$i}px !important;
+      line-height: #{$i + 8}px !important;
     }
   }
 }

@@ -14,7 +14,6 @@ interface stats {
 
 @Component({
     selector: 'app-recent-transactions',
-    standalone: true,
     imports: [NgApexchartsModule, MaterialModule],
     templateUrl: './recent-transactions.component.html',
 })

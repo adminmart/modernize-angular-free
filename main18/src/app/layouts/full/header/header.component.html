@@ -1,0 +1,44 @@
+<mat-toolbar class="topbar">
+
+  <!-- Mobile Menu -->
+  <button mat-icon-button (click)="toggleMobileNav.emit()" class="d-flex d-md-none justify-content-center">
+    <i-tabler name="menu-2" class="icon-20 d-flex"></i-tabler>
+  </button>
+
+
+  <button mat-icon-button aria-label="Notifications">
+    <i-tabler class="d-flex" name="bell" matBadge="1" matBadgeColor="primary"></i-tabler>
+  </button>
+
+
+  <span class="flex-1-auto"></span>
+
+  <!-- --------------------------------------------------------------- -->
+  <!-- profile Dropdown -->
+  <!-- --------------------------------------------------------------- -->
+  <a mat-flat-button color="primary" href="https://adminmart.com/product/modernize-angular-admin-dashboard/"
+    target="_blank" class="d-flex justify-content-center">
+    Download Free
+  </a>
+  <button mat-icon-button [matMenuTriggerFor]="profilemenu" aria-label="Notifications">
+    <img src="/assets/images/profile/user-1.jpg" class="rounded-circle object-cover" width="35" />
+  </button>
+  <mat-menu #profilemenu="matMenu" class="cardWithShadow">
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"><i-tabler name="user" class="icon-18 d-flex"></i-tabler></mat-icon>My
+      Profile
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"><i-tabler name="mail" class="icon-18 d-flex"></i-tabler></mat-icon>My
+      Account
+    </button>
+    <button mat-menu-item>
+      <mat-icon class="d-flex align-items-center"><i-tabler name="list-check"
+          class="icon-18 d-flex"></i-tabler></mat-icon>My Task
+    </button>
+
+    <div class="p-x-12 m-t-12">
+      <a [routerLink]="['/authentication/login']" mat-stroked-button color="primary" class="w-100">Logout</a>
+    </div>
+  </mat-menu>
+</mat-toolbar>

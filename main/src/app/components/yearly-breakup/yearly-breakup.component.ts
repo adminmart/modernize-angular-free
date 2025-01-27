@@ -35,7 +35,6 @@ export interface yearlyChart {
 
 @Component({
     selector: 'app-yearly-breakup',
-    standalone: true,
     templateUrl: './yearly-breakup.component.html',
     imports: [MaterialModule, NgApexchartsModule, TablerIconsModule],
     encapsulation: ViewEncapsulation.None,
@@ -52,9 +51,9 @@ export class AppYearlyBreakupComponent {
 
             color: "#adb5bd",
             series: [38, 40, 25],
-            labels: ["2022", "2021", "2020"],
+            labels: ["2025", "2024", "2023"],
             chart: {
-                width: 180,
+                width: 125,
                 type: "donut",
                 fontFamily: "inherit",
                 foreColor: "#adb0bb",

@@ -13,13 +13,16 @@
   }
 }
 
+@media (min-width: 960px) {
+  .d-md-none {
+    display: none !important;
+  }
+}
+
 @media (min-width: 768px) {
   body {
     .d-sm-flex {
       display: flex !important;
-    }
-    .d-md-none {
-      display: none !important;
     }
   }
 }
@@ -36,4 +39,16 @@
 
 .flex-1-auto {
   flex: 1 1 0%;
+}
+
+.hstack {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .hstack {
+    flex-direction: column;
+  }
 }

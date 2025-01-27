@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .blank-layout-container {
   height: 100vh;
   display: flex;
@@ -17,12 +19,9 @@
     height: 100%;
     width: 100%;
     opacity: 0.3;
-    background: radial-gradient(
-        rgb(210, 241, 223),
+    background: radial-gradient(rgb(210, 241, 223),
         rgb(211, 215, 250),
-        rgb(186, 216, 244)
-      )
-      0% 0% / 400% 400%;
+        rgb(186, 216, 244)) 0% 0% / 400% 400%;
     animation: 15s ease 0s infinite normal none running gradient;
     z-index: -1;
   }
@@ -32,9 +31,11 @@
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 50% 0%;
   }
@@ -48,6 +49,7 @@
   &.row {
     margin-right: -8px;
     margin-left: -8px;
+
     .col-2,
     .col-12 {
       padding-right: 8px;
@@ -59,23 +61,25 @@
 .or-border {
   position: relative;
   text-align: center;
+
   &:before {
     content: "";
     position: absolute;
     left: 0;
-    width: 100px;
+    width: 120px;
     top: 50%;
     height: 1px;
-    background: $borderColor;
+    background: var(--mat-sys-outline);
   }
+
   &:after {
     content: "";
     position: absolute;
     right: 0;
-    width: 100px;
+    width: 120px;
     top: 50%;
     height: 1px;
-    background: $borderColor;
+    background: var(--mat-sys-outline);
   }
 }
 
@@ -90,6 +94,7 @@
 }
 
 .mat-mdc-form-field.mat-form-field-invalid {
+
   .mdc-notched-outline__leading,
   .mdc-notched-outline__notch,
   .mdc-notched-outline__trailing {

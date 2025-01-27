@@ -10,7 +10,6 @@ import { AppBlogCardsComponent } from 'src/app/components/blog-card/blog-card.co
 
 @Component({
   selector: 'app-starter',
-  standalone: true,
   imports: [
     MaterialModule,
     AppSalesOverviewComponent,
