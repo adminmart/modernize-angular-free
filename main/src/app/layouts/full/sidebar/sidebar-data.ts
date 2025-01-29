@@ -426,7 +426,7 @@ export const navItems: NavItem[] = [
   {
     displayName: 'Widgets',
     iconName: 'layout',
-    route: 'https://modernize-angular-main.netlify.app/widgets',
+    route: 'widgets',
     chip: true,
     chipClass: 'bg-secondary text-white',
     chipContent: 'PRO',
@@ -434,7 +434,7 @@ export const navItems: NavItem[] = [
       {
         displayName: 'Cards',
         iconName: 'point',
-        route: 'https://modernize-angular-main.netlify.appwidgets/cards',
+        route: 'https://modernize-angular-main.netlify.app/widgets/cards',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -443,7 +443,7 @@ export const navItems: NavItem[] = [
       {
         displayName: 'Banners',
         iconName: 'point',
-        route: 'https://modernize-angular-main.netlify.appwidgets/banners',
+        route: 'https://modernize-angular-main.netlify.app/widgets/banners',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -482,7 +482,7 @@ export const navItems: NavItem[] = [
     chip: true,
     chipClass: 'bg-secondary text-white',
     chipContent: 'PRO',
-    route: 'https://modernize-angular-main.netlify.app/forms/forms-elements',
+    route: 'forms/forms-elements',
     children: [
       {
         displayName: 'Autocomplete',
@@ -588,7 +588,7 @@ export const navItems: NavItem[] = [
   {
     displayName: 'Tables',
     iconName: 'layout',
-    route: 'https://modernize-angular-main.netlify.app/tables',
+    route: 'tables',
     chip: true,
     chipClass: 'bg-secondary text-white',
     chipContent: 'PRO',
@@ -596,7 +596,7 @@ export const navItems: NavItem[] = [
       {
         displayName: 'Basic Table',
         iconName: 'point',
-        route: 'https://modernize-angular-main.netlify.apptables/basic-table',
+        route: 'https://modernize-angular-main.netlify.app/tables/basic-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -605,7 +605,7 @@ export const navItems: NavItem[] = [
       {
         displayName: 'Dynamic Table',
         iconName: 'point',
-        route: 'https://modernize-angular-main.netlify.apptables/dynamic-table',
+        route: 'https://modernize-angular-main.netlify.app/tables/dynamic-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -614,7 +614,7 @@ export const navItems: NavItem[] = [
       {
         displayName: 'Expand Table',
         iconName: 'point',
-        route: 'https://modernize-angular-main.netlify.apptables/expand-table',
+        route: 'https://modernize-angular-main.netlify.app/tables/expand-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -624,7 +624,7 @@ export const navItems: NavItem[] = [
         displayName: 'Filterable Table',
         iconName: 'point',
         route:
-          'https://modernize-angular-main.netlify.apptables/filterable-table',
+          'https://modernize-angular-main.netlify.app/tables/filterable-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -634,7 +634,7 @@ export const navItems: NavItem[] = [
         displayName: 'Footer Row Table',
         iconName: 'point',
         route:
-          'https://modernize-angular-main.netlify.apptables/footer-row-table',
+          'https://modernize-angular-main.netlify.app/tables/footer-row-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -643,7 +643,7 @@ export const navItems: NavItem[] = [
       {
         displayName: 'HTTP Table',
         iconName: 'point',
-        route: 'https://modernize-angular-main.netlify.apptables/http-table',
+        route: 'https://modernize-angular-main.netlify.app/tables/http-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -652,7 +652,7 @@ export const navItems: NavItem[] = [
       {
         displayName: 'Mix Table',
         iconName: 'point',
-        route: 'https://modernize-angular-main.netlify.apptables/mix-table',
+        route: 'https://modernize-angular-main.netlify.app/tables/mix-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -662,7 +662,7 @@ export const navItems: NavItem[] = [
         displayName: 'Multi Header Footer',
         iconName: 'point',
         route:
-          'https://modernize-angular-main.netlify.apptables/multi-header-footer-table',
+          'https://modernize-angular-main.netlify.app/tables/multi-header-footer-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -672,7 +672,7 @@ export const navItems: NavItem[] = [
         displayName: 'Pagination Table',
         iconName: 'point',
         route:
-          'https://modernize-angular-main.netlify.apptables/pagination-table',
+          'https://modernize-angular-main.netlify.app/tables/pagination-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -682,7 +682,7 @@ export const navItems: NavItem[] = [
         displayName: 'Row Context Table',
         iconName: 'point',
         route:
-          'https://modernize-angular-main.netlify.apptables/row-context-table',
+          'https://modernize-angular-main.netlify.app/tables/row-context-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -692,7 +692,7 @@ export const navItems: NavItem[] = [
         displayName: 'Selection Table',
         iconName: 'point',
         route:
-          'https://modernize-angular-main.netlify.apptables/selection-table',
+          'https://modernize-angular-main.netlify.app/tables/selection-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -702,7 +702,7 @@ export const navItems: NavItem[] = [
         displayName: 'Sortable Table',
         iconName: 'point',
         route:
-          'https://modernize-angular-main.netlify.apptables/sortable-table',
+          'https://modernize-angular-main.netlify.app/tables/sortable-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -712,7 +712,7 @@ export const navItems: NavItem[] = [
         displayName: 'Sticky Column',
         iconName: 'point',
         route:
-          'https://modernize-angular-main.netlify.apptables/sticky-column-table',
+          'https://modernize-angular-main.netlify.app/tables/sticky-column-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
@@ -722,7 +722,7 @@ export const navItems: NavItem[] = [
         displayName: 'Sticky Header Footer',
         iconName: 'point',
         route:
-          'https://modernize-angular-main.netlify.apptables/sticky-header-footer-table',
+          'https://modernize-angular-main.netlify.app/tables/sticky-header-footer-table',
         external: true,
         chip: true,
         chipClass: 'bg-secondary text-white',
