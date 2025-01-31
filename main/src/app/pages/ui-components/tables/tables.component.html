@@ -38,12 +38,12 @@
               <span class="text-dark f-w-600">${{ element.budget }} </span>/ 499
             </h6>
             <span class="f-s-14 f-w-500 d-block m-b-4">Partially paid</span>
-            <mat-progress-bar mode="determinate" value="35" color="accent"></mat-progress-bar>
+            <mat-progress-bar mode="determinate" class="mat-error" value="35" color="accent"></mat-progress-bar>
             } @else if(element.budget < 100) { <h6 class=" f-s-16 m-b-4">
               <span class="text-dark f-w-600">${{ element.budget }} </span>/ 499
               </h6>
               <span class="f-s-14 f-w-500 d-block m-b-4">Cancelled</span>
-              <mat-progress-bar mode="determinate" value="50" color="warn"></mat-progress-bar>
+              <mat-progress-bar mode="determinate" class="mat-warning" value="50" color="warn"></mat-progress-bar>
               }
           </td>
         </ng-container>
