@@ -1,40 +1,48 @@
 <div class="app-topstrip bg-dark text-white p-y-10 p-x-20 w-100 d-lg-flex align-items-center justify-content-between">
-    <h2 class="f-s-18 m-y-8 text-lg-left text-center">Modernize Pro Version is Available!</h2>
-
-    <div class="d-flex align-items-center justify-content-center flex-wrap">
-
-        <!-- Support -->
-        <a mat-button class="text-white d-none d-lg-flex" href="https://adminmart.com/support/" target="_blank">
-            <div class="d-flex align-items-center gap-4">
-                <i-tabler name="lifebuoy" class="icon-20 d-flex"></i-tabler>
-                Support
-            </div>
+    <div class="d-flex align-items-center justify-content-center gap-48">
+        <a class="d-flex align-items-center" href="https://adminmart.com/" target="_blank">
+            <img src="/assets/images/logos/logo-adminmart.svg" alt="">
         </a>
+    
+        <div class="d-flex align-items-center justify-content-center flex-wrap">
+            <!-- Support -->
+            <a mat-button class="text-white d-none d-lg-flex" href="https://adminmart.com/support/" target="_blank">
+                <div class="d-flex align-items-center gap-4">
+                    <i-tabler name="lifebuoy" class="icon-20 d-flex"></i-tabler>
+                    Support
+                </div>
+            </a>
 
-        <!-- Templates -->
-        <a mat-button class="text-white d-none d-lg-flex" href="https://adminmart.com/" target="_blank">
-            <div class="d-flex align-items-center gap-4">
-                <i-tabler name="gift" class="icon-20 d-flex"></i-tabler>
-                Templates
-            </div>
-        </a>
+            <!-- Templates -->
+            <a mat-button class="text-white d-none d-lg-flex" href="https://adminmart.com/" target="_blank">
+                <div class="d-flex align-items-center gap-4">
+                    <i-tabler name="gift" class="icon-20 d-flex"></i-tabler>
+                    Templates
+                </div>
+            </a>
 
-        <!-- Hire Us -->
-        <a mat-button class="text-white d-none d-lg-flex" href="https://adminmart.com/hire-us/" target="_blank">
-            <div class="d-flex align-items-center gap-4">
-                <i-tabler name="briefcase" class="icon-20 d-flex"></i-tabler>
-                Hire Us
-            </div>
-        </a>
+            <!-- Hire Us -->
+            <a mat-button class="text-white d-none d-lg-flex" href="https://adminmart.com/hire-us/" target="_blank">
+                <div class="d-flex align-items-center gap-4">
+                    <i-tabler name="briefcase" class="icon-20 d-flex"></i-tabler>
+                    Hire Us
+                </div>
+            </a>
+        </div>
+    </div>
 
-        <!-- Live Preview -->
-        <button class="d-flex align-items-center gap-4 text-white b-1 border-primary m-x-10" mat-button
-            [matMenuTriggerFor]="beforeMenu">
-            <div class="d-flex align-items-center gap-6">
-                <i-tabler name="device-laptop" class="icon-20 d-flex"></i-tabler>
-                Live Preview
-                <i-tabler name="chevron-down" class="icon-20 d-flex"></i-tabler>
-            </div>
+    <div class="d-lg-flex align-items-center justify-content-center flex-wrap gap-12">
+        <h2 class="f-s-18 m-y-8 text-lg-left text-center">Check Modernize Premium Version</h2>
+
+        <div class="d-flex justify-content-center align-items-center gap-12">
+            <!-- Live Preview -->
+        <button class="d-flex align-items-center gap-4 text-white b-1 border-primary" mat-button
+        [matMenuTriggerFor]="beforeMenu">
+        <div class="d-flex align-items-center gap-6">
+            <i-tabler name="device-laptop" class="icon-20 d-flex"></i-tabler>
+            Live Preview
+            <i-tabler name="chevron-down" class="icon-20 d-flex"></i-tabler>
+        </div>
         </button>
         <mat-menu #beforeMenu="matMenu" xPosition="before">
             <a mat-menu-item href="https://adminmart.com/product/modernize-angular-material-dashboard/?ref=56"
@@ -121,6 +129,7 @@
                 </div>
             </a>
         </mat-menu>
-
+        </div>
     </div>
+
 </div>
