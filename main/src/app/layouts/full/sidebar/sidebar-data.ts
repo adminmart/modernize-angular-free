@@ -15,7 +15,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/dashboards/dashboard1',
     chip: true,
     external: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -24,7 +24,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/dashboards/dashboard2',
     chip: true,
     external: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
 
@@ -37,7 +37,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/apps/chat',
     chip: true,
     external: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -46,7 +46,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/apps/calendar',
     chip: true,
     external: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -55,7 +55,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/apps/email/inbox',
     chip: true,
     external: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -64,7 +64,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/apps/kanban',
     chip: true,
     external: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -73,7 +73,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/apps/contacts',
     chip: true,
     external: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -82,7 +82,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/apps/contact-list',
     chip: true,
     external: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -91,7 +91,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/apps/courses',
     chip: true,
     external: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -100,7 +100,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/apps/employee',
     chip: true,
     external: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -109,7 +109,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/apps/notes',
     chip: true,
     external: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -118,7 +118,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/apps/tickets',
     chip: true,
     external: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -127,14 +127,14 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/apps/todo',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
     displayName: 'Invoice',
     iconName: 'file-invoice',
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
     route: '',
     children: [
@@ -143,7 +143,7 @@ export const navItems: NavItem[] = [
         iconName: 'point',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
         route: '/https://modernize-angular-main.netlify.app/apps/invoice',
       },
@@ -152,7 +152,7 @@ export const navItems: NavItem[] = [
         iconName: 'point',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
         route:
           '/https://modernize-angular-main.netlify.app/apps/viewInvoice/101',
@@ -162,7 +162,7 @@ export const navItems: NavItem[] = [
         iconName: 'point',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
         route: '/https://modernize-angular-main.netlify.app/apps/addInvoice',
       },
@@ -171,7 +171,7 @@ export const navItems: NavItem[] = [
         iconName: 'point',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
         route:
           '/https://modernize-angular-main.netlify.app/apps/editinvoice/101',
@@ -183,7 +183,7 @@ export const navItems: NavItem[] = [
     displayName: 'Blog',
     iconName: 'chart-donut-3',
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
     route: 'apps/blog',
     children: [
@@ -192,7 +192,7 @@ export const navItems: NavItem[] = [
         iconName: 'point',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
         route: 'https://modernize-angular-main.netlify.app/apps/blog/post',
       },
@@ -201,7 +201,7 @@ export const navItems: NavItem[] = [
         iconName: 'point',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
         route:
           'https://modernize-angular-main.netlify.app/apps/blog/detail/Early Black Friday Amazon deals: cheap TVs, headphones, laptops',
@@ -253,7 +253,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/ui-components/expansion',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -262,7 +262,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/ui-components/dialog',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -271,7 +271,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/ui-components/divider',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -280,7 +280,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/ui-components/paginator',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -289,7 +289,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/ui-components/progress',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -298,7 +298,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/ui-components/progress-spinner',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -307,7 +307,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/ui-components/ripples',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -316,7 +316,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/ui-components/slide-toggle',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -325,7 +325,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/ui-components/slider',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -334,7 +334,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/ui-components/snackbar',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -343,7 +343,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/ui-components/tabs',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -352,7 +352,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/ui-components/toolbar',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -361,7 +361,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/ui-components/tooltips',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
 
@@ -374,7 +374,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/apps/permission',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -383,7 +383,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/theme-pages/treeview',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -392,7 +392,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/theme-pages/pricing',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -402,7 +402,7 @@ export const navItems: NavItem[] = [
       'https://modernize-angular-main.netlify.app/theme-pages/account-setting',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -411,7 +411,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/theme-pages/faq',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -420,7 +420,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/landingpage',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -428,7 +428,7 @@ export const navItems: NavItem[] = [
     iconName: 'layout',
     route: 'widgets',
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
     children: [
       {
@@ -437,7 +437,7 @@ export const navItems: NavItem[] = [
         route: 'https://modernize-angular-main.netlify.app/widgets/cards',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -446,7 +446,7 @@ export const navItems: NavItem[] = [
         route: 'https://modernize-angular-main.netlify.app/widgets/banners',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -455,7 +455,7 @@ export const navItems: NavItem[] = [
         route: 'https://modernize-angular-main.netlify.app/widgets/charts',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
     ],
@@ -480,7 +480,7 @@ export const navItems: NavItem[] = [
     displayName: 'Elements',
     iconName: 'apps',
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
     route: 'forms/forms-elements',
     children: [
@@ -491,7 +491,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/forms/forms-elements/autocomplete',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -501,7 +501,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/forms/forms-elements/button',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -511,7 +511,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/forms/forms-elements/checkbox',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -521,7 +521,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/forms/forms-elements/radio',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -531,7 +531,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/forms/forms-elements/datepicker',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
     ],
@@ -542,7 +542,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/forms/form-layouts',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -551,7 +551,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/forms/form-horizontal',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -560,7 +560,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/forms/form-vertical',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -569,7 +569,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/forms/form-wizard',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -578,7 +578,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/forms/form-toastr',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   
@@ -590,7 +590,7 @@ export const navItems: NavItem[] = [
     iconName: 'layout',
     route: 'tables',
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
     children: [
       {
@@ -599,7 +599,7 @@ export const navItems: NavItem[] = [
         route: 'https://modernize-angular-main.netlify.app/tables/basic-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -608,7 +608,7 @@ export const navItems: NavItem[] = [
         route: 'https://modernize-angular-main.netlify.app/tables/dynamic-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -617,7 +617,7 @@ export const navItems: NavItem[] = [
         route: 'https://modernize-angular-main.netlify.app/tables/expand-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -627,7 +627,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/tables/filterable-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -637,7 +637,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/tables/footer-row-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -646,7 +646,7 @@ export const navItems: NavItem[] = [
         route: 'https://modernize-angular-main.netlify.app/tables/http-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -655,7 +655,7 @@ export const navItems: NavItem[] = [
         route: 'https://modernize-angular-main.netlify.app/tables/mix-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -665,7 +665,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/tables/multi-header-footer-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -675,7 +675,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/tables/pagination-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -685,7 +685,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/tables/row-context-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -695,7 +695,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/tables/selection-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -705,7 +705,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/tables/sortable-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -715,7 +715,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/tables/sticky-column-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
       {
@@ -725,7 +725,7 @@ export const navItems: NavItem[] = [
           'https://modernize-angular-main.netlify.app/tables/sticky-header-footer-table',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
       },
     ],
@@ -736,7 +736,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/datatable/kichen-sink',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -748,7 +748,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/charts/line',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -757,7 +757,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/charts/gredient',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -766,7 +766,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/charts/area',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -775,7 +775,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/charts/candlestick',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -784,7 +784,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/charts/column',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -793,7 +793,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/charts/doughnut-pie',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -802,7 +802,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app/charts/radial-radar',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
 
@@ -824,7 +824,7 @@ export const navItems: NavItem[] = [
         iconName: 'point',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white', 
+        chipClass: 'bg-light-secondary text-secondary', 
         chipContent: 'PRO',
         route: 'https://modernize-angular-main.netlify.app/authentication/login',
       },
@@ -845,7 +845,7 @@ export const navItems: NavItem[] = [
         iconName: 'point',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
         route: 'https://modernize-angular-main.netlify.app/authentication/side-register',
       },
@@ -855,7 +855,7 @@ export const navItems: NavItem[] = [
     displayName: 'Forgot Pwd',
     iconName: 'rotate',
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
     route: '/authentication',
     children: [
@@ -864,7 +864,7 @@ export const navItems: NavItem[] = [
         iconName: 'point',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
         route: 'https://modernize-angular-main.netlify.app/authentication/side-forgot-pwd',
       },
@@ -873,7 +873,7 @@ export const navItems: NavItem[] = [
         iconName: 'point',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
         route: 'https://modernize-angular-main.netlify.app/authentication/boxed-forgot-pwd',
       },
@@ -883,7 +883,7 @@ export const navItems: NavItem[] = [
     displayName: 'Two Steps',
     iconName: 'zoom-code',
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
     route: '/authentication',
     children: [
@@ -892,7 +892,7 @@ export const navItems: NavItem[] = [
         iconName: 'point',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
         route: 'https://modernize-angular-main.netlify.app/authentication/side-two-steps',
       },
@@ -901,7 +901,7 @@ export const navItems: NavItem[] = [
         iconName: 'point',
         external: true,
         chip: true,
-        chipClass: 'bg-secondary text-white',
+        chipClass: 'bg-light-secondary text-secondary',
         chipContent: 'PRO',
         route: 'https://modernize-angular-main.netlify.app/authentication/boxed-two-steps',
       },
@@ -913,7 +913,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app//authentication/error',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
   {
@@ -922,7 +922,7 @@ export const navItems: NavItem[] = [
     route: 'https://modernize-angular-main.netlify.app//authentication/maintenance',
     external: true,
     chip: true,
-    chipClass: 'bg-secondary text-white',
+    chipClass: 'bg-light-secondary text-secondary',
     chipContent: 'PRO',
   },
 ];
