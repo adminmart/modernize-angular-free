@@ -1,33 +1,35 @@
+@use "../variables" as *;
+
 // theme select
 .theme-select {
     width: 150px;
     height: 36px;
-  
+
     .mat-form-field-infix {
-      padding: 6px 0 1px !important;
+        padding: 6px 0 1px !important;
     }
-  
+
     .mat-mdc-form-field-subscript-wrapper {
-      display: none;
+        display: none;
     }
-  
+
     .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__leading {
-      border-top-left-radius: $border-radius;
-      border-bottom-left-radius: $border-radius;
-      border-color: $borderColor;
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+        border-color: $borderColor;
     }
-  
+
     .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__trailing {
-      border-top-right-radius: $border-radius;
-      border-bottom-right-radius: $border-radius;
-      border-color: $borderColor;
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+        border-color: $borderColor;
     }
-  
+
     .mat-mdc-form-field-flex {
-      height: 36px;
-      align-items: center;
+        height: 36px;
+        align-items: center;
     }
-  }
+}
 
 .timeline {
     position: relative;

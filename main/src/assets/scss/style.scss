@@ -17,8 +17,7 @@
 @use "layouts/layouts";
 @use "grid/grid";
 @use "helpers/custom-flex";
-@use "helpers";
+@use "helpers/index";
 
-// pages
 @use "pages/auth";
-@import "pages/dashboards";
+@use "pages/dashboards";
