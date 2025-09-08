@@ -5,7 +5,7 @@
 </p>
 <h1 align="center">
    <a href="https://adminmart.com/product/modernize-free-angular-material-template/?ref=56" target="_blank" align="center">
-       Modernize Free Angular 19 Material Template
+       Modernize Free Angular 20 Material Template
    </a>
 </h1>
 <p>Download most useful and comprehensive 🚀 Free Angular admin template built for developers </p>
