@@ -1,6 +1,6 @@
 <p align="center">
    <a href="https://adminmart.com/" target="_blank">
-      <img src="https://adminmart.github.io/template_api/images/brand-logo/adminmart-Logo.svg" alt="sneat-logo" width="100px" height="100px">
+      <img src="https://adminmart.github.io/template_api/images/brand-logo/adminmart-Logo.svg" alt="modernize-image" width="100px" height="100px">
    </a>
 </p>
 <h1 align="center">
@@ -150,7 +150,7 @@ The **Free Version** of the **Modernize Material Angular Dashboard Template** pr
             <span>Next</span>
          </th>
           <th>
-            <img src="https://skillicons.dev/icons?i=nuxt" height="20" alt="next templates" style="margin-right: 8px;">
+            <img src="https://skillicons.dev/icons?i=nuxt" height="20" alt="nuxt templates" style="margin-right: 8px;">
             <span>Nuxt</span>
          </th>
       </tr>
@@ -169,7 +169,7 @@ The **Free Version** of the **Modernize Material Angular Dashboard Template** pr
          </td> 
          <td>
            <a href="https://adminmart.com/product/modernize-nuxt-js-admin-dashboard/?ref=56" width="150px">
-             <img src="https://adminmart.com/wp-content/uploads/2024/10/matdash-nuxtjs-pro.jpg" alt="materialM-next-admin-template" >
+             <img src="https://adminmart.com/wp-content/uploads/2024/10/matdash-nuxtjs-pro.jpg" alt="materialM-nuxt-admin-template" >
            </a>
          </td> 
       </tr>
@@ -177,7 +177,7 @@ The **Free Version** of the **Modernize Material Angular Dashboard Template** pr
    <thead>
       <tr>
          <th>
-            <img src="https://skillicons.dev/icons?i=react" height="20" alt="angular templates" style="margin-right: 8px;">
+            <img src="https://skillicons.dev/icons?i=react" height="20" alt="react templates" style="margin-right: 8px;">
             <span>React</span>
          </th>
          <th>
