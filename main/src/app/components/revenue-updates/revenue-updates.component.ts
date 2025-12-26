@@ -49,9 +49,9 @@ export class AppRevenueUpdatesComponent {
   public revenueChart!: Partial<revenueChart> | any;
 
   months: month[] = [
-    { value: 'mar', viewValue: 'Year 2025' },
-    { value: 'apr', viewValue: 'Year 2024' },
-    { value: 'june', viewValue: 'Year 2023' },
+    { value: 'mar', viewValue: 'Year 2026' },
+    { value: 'apr', viewValue: 'Year 2025' },
+    { value: 'june', viewValue: 'Year 2024' },
   ];
 
   constructor() {

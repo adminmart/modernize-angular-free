@@ -24,25 +24,25 @@ export class AppListsComponent {
   folders: Section[] = [
     {
       name: 'Photos',
-      updated: new Date('1/1/25'),
+      updated: new Date('1/1/26'),
     },
     {
       name: 'Recipes',
-      updated: new Date('1/17/25'),
+      updated: new Date('1/17/26'),
     },
     {
       name: 'Work',
-      updated: new Date('1/28/25'),
+      updated: new Date('1/28/26'),
     },
   ];
   notes: Section[] = [
     {
       name: 'Vacation Itinerary',
-      updated: new Date('2/20/25'),
+      updated: new Date('2/20/26'),
     },
     {
       name: 'Kitchen Remodel',
-      updated: new Date('1/18/25'),
+      updated: new Date('1/18/26'),
     },
   ];
 }
