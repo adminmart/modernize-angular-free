@@ -23,28 +23,28 @@ export class AppBlogCardsComponent {
     productcards: productCards[] = [
         {
             id: 1,
-            imgSrc: '/assets/images/products/s4.jpg',
+            imgSrc: '/assets/images/products/product-1.jpg',
             title: 'Boat Headphone',
             price: '285',
             rprice: '375',
         },
         {
             id: 2,
-            imgSrc: '/assets/images/products/s5.jpg',
+            imgSrc: '/assets/images/products/product-2.jpg',
             title: 'MacBook Air Pro',
             price: '285',
             rprice: '375',
         },
         {
             id: 3,
-            imgSrc: '/assets/images/products/s7.jpg',
+            imgSrc: '/assets/images/products/product-3.jpg',
             title: 'Red Valvet Dress',
             price: '285',
             rprice: '375',
         },
         {
             id: 4,
-            imgSrc: '/assets/images/products/s11.jpg',
+            imgSrc: '/assets/images/products/product-4.jpg',
             title: 'Cute Soft Teddybear',
             price: '285',
             rprice: '375',

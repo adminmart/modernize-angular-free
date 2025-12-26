@@ -1,20 +1,20 @@
 <mat-card class="cardWithShadow theme-card">
-  <mat-card-header>
-    <mat-card-title class="m-b-0">Form</mat-card-title>
-  </mat-card-header>
-  <mat-card-content class="b-t-1">
+  <div class="p-6">
+    <mat-card-title class="mb-0">Form</mat-card-title>
+  </div>
+  <mat-card-content class="border-t border-border">
     <form>
-      <div class="row">
-        <div class="col-lg-6">
+      <div class="grid grid-cols-12 gap-x-6">
+        <div class="col-span-12 lg:col-span-6">
           <!-- input -->
-          <mat-label class="f-w-600 m-b-8 d-block">Your Name</mat-label>
-          <mat-form-field appearance="outline" class="w-100" color="primary">
+          <mat-label class="font-semibold mb-2 block">Your Name</mat-label>
+          <mat-form-field appearance="outline" class="w-full" color="primary">
             <input matInput placeholder="your name " />
           </mat-form-field>
         </div>
-        <div class="col-lg-6">
-          <mat-label class="f-w-600 m-b-8 d-block">Country</mat-label>
-          <mat-form-field appearance="outline" class="w-100">
+        <div class="col-span-12 lg:col-span-6">
+          <mat-label class="font-semibold mb-2 block">Country</mat-label>
+          <mat-form-field appearance="outline" class="w-full">
             <mat-select [(value)]="selectedCountry">
               @for(option of country; track option.value) {
               <mat-option [value]="option.value">{{
@@ -24,16 +24,16 @@
             </mat-select>
           </mat-form-field>
         </div>
-        <div class="col-lg-6">
+        <div class="col-span-12 lg:col-span-6">
           <!-- input -->
-          <mat-label class="f-w-600 m-b-8 d-block">Email</mat-label>
-          <mat-form-field appearance="outline" class="w-100" color="primary">
+          <mat-label class="font-semibold mb-2 block">Email</mat-label>
+          <mat-form-field appearance="outline" class="w-full" color="primary">
             <input matInput type="email" placeholder="your email" />
           </mat-form-field>
         </div>
-        <div class="col-lg-6">
-          <mat-label class="f-w-600 m-b-8 d-block">State</mat-label>
-          <mat-form-field appearance="outline" class="w-100">
+        <div class="col-span-12 lg:col-span-6">
+          <mat-label class="font-semibold mb-2 block">State</mat-label>
+          <mat-form-field appearance="outline" class="w-full">
             <mat-select [(value)]="selectedState">
               @for(option of state; track option.value) {
               <mat-option [value]="option.value">{{
@@ -43,16 +43,16 @@
             </mat-select>
           </mat-form-field>
         </div>
-        <div class="col-lg-6">
+        <div class="col-span-12 lg:col-span-6">
           <!-- input -->
-          <mat-label class="f-w-600 m-b-8 d-block">Password</mat-label>
-          <mat-form-field appearance="outline" class="w-100" color="primary">
+          <mat-label class="font-semibold mb-2 block">Password</mat-label>
+          <mat-form-field appearance="outline" class="w-full" color="primary">
             <input matInput type="password" placeholder="your password" />
           </mat-form-field>
         </div>
-        <div class="col-lg-6">
-          <mat-label class="f-w-600 m-b-8 d-block">City</mat-label>
-          <mat-form-field appearance="outline" class="w-100">
+        <div class="col-span-12 lg:col-span-6">
+          <mat-label class="font-semibold mb-2 block">City</mat-label>
+          <mat-form-field appearance="outline" class="w-full">
             <mat-select [(value)]="selectedCity">
               @for(option of city; track option.value) {
               <mat-option [value]="option.value">{{
@@ -64,8 +64,8 @@
         </div>
       </div>
 
-      <div class="m-t-12">
-        <button mat-flat-button color="primary" class="m-r-8">Submit</button>
+      <div class="mt-3">
+        <button mat-flat-button color="primary" class="me-2">Submit</button>
         <button mat-stroked-button color="warn">Cancel</button>
       </div>
     </form>

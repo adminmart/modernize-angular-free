@@ -1,7 +1,13 @@
 {
-  "Starter": "Analytique",
-  "Menu Level": "Niveau menu",
-  "Menu 1": "Menu 1",
-  "Menu 2": "Menu 2",
-  "Disabled": "Désactivé"
+  "Home": "Accueil",
+  "Sample Page": "Page d'exemple",
+  "Auth": "Auth",
+  "Login": "Connexion",
+  "Register": "S'inscrire",
+  "Other": "Autre",
+  "Menu Level": "Niveau du menu",
+  "Disabled": "Désactivé",
+  "Chip": "Puce",
+  "Outlined": "Délimité",
+  "External Link": "Lien externe"
 }

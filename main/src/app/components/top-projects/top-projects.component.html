@@ -1,0 +1,83 @@
+<mat-card class="cardWithShadow mb-0!">
+  <mat-card-content class="pb-0!">
+    <mat-card-title class="mb-3">Product Performance</mat-card-title>
+    <div class="relative overflow-auto">
+      <table mat-table [dataSource]="dataSource" class="min-w-full">
+        <!-- id Column -->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef class="font-semibold text-sm">Id</th>
+          <td class="whitespace-nowrap" mat-cell *matCellDef="let element">
+            {{ element.id }}
+          </td>
+        </ng-container>
+
+        <!-- Position Column -->
+        <ng-container matColumnDef="assigned">
+          <th mat-header-cell *matHeaderCellDef class="font-semibold text-sm">
+            Assigned
+          </th>
+          <td class="whitespace-nowrap" mat-cell *matCellDef="let element">
+            <h6 class="text-sm font-semibold">
+              {{ element.uname }}
+            </h6>
+            <span class="font-normal text-xs text-muted">
+              {{ element.position }}
+            </span>
+          </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef class="font-semibold text-sm">Name</th>
+          <td class="whitespace-nowrap text-muted" mat-cell *matCellDef="let element">
+            {{ element.productName }}
+          </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="priority">
+          <th mat-header-cell *matHeaderCellDef class="font-semibold text-sm">
+            Priority
+          </th>
+          <td class="whitespace-nowrap" mat-cell *matCellDef="let element">
+            @if(element.priority == 'low') {
+            <span class="bg-primary text-white rounded-full font-semibold px-[7px] py-1 text-xs">
+              {{ element.priority | titlecase }}
+            </span>
+
+            } @if(element.priority == 'medium') {
+            <span class="bg-secondary text-white rounded-full font-semibold px-[7px] py-1 text-xs">
+              {{ element.priority | titlecase }}
+            </span>
+            } @if(element.priority == 'high') {
+            <span class="bg-error text-white rounded-full font-semibold px-[7px] py-1 text-xs">
+              {{ element.priority | titlecase }}
+            </span>
+            } @if(element.priority == 'critical') {
+            <span class="bg-success text-white rounded-full font-semibold px-[7px] py-1 text-xs">
+              {{ element.priority | titlecase }}
+            </span>
+            } @if(element.priority == 'moderate') {
+            <span class="bg-primary text-white rounded-full font-semibold px-[7px] py-1 text-xs">
+              {{ element.priority | titlecase }}
+            </span>
+            }
+          </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="budget">
+          <th mat-header-cell *matHeaderCellDef class="font-semibold text-sm">
+            Budget
+          </th>
+          <td class="whitespace-nowrap" mat-cell *matCellDef="let element">
+            {{ element.budget }}k
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
+  </mat-card-content>
+</mat-card>

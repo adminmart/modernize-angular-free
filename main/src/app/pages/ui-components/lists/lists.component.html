@@ -1,18 +1,18 @@
 <mat-card class="cardWithShadow theme-card">
-  <mat-card-header>
-    <mat-card-title class="m-b-0">Lists</mat-card-title>
-  </mat-card-header>
-  <mat-card-content class="b-t-1">
-    <div class="row">
-      <div class="col-lg-6">
+  <div class="p-6">
+    <mat-card-title class="mb-0">Lists</mat-card-title>
+  </div>
+  <mat-card-content class="border-t border-border">
+    <div class="grid grid-cols-12 gap-6">
+      <div class="col-span-12 lg:col-span-6">
         <!-- --------------------------------------------------- -->
         <!-- basic -->
         <!-- --------------------------------------------------- -->
-        <mat-card class="b-1 shadow-none">
-          <mat-card-header>
+        <mat-card class="border! border-border! shadow-none mb-0!">
+          <div class="p-4">
             <mat-card-title>Basic</mat-card-title>
-          </mat-card-header>
-          <mat-card-content class="b-t-1">
+          </div>
+          <mat-card-content class="border-t border-border">
             <mat-list role="list">
               <mat-list-item role="listitem">Item 1</mat-list-item>
               <mat-list-item role="listitem">Item 2</mat-list-item>
@@ -22,22 +22,22 @@
         </mat-card>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-span-12 lg:col-span-6">
         <!-- --------------------------------------------------- -->
         <!-- two line -->
         <!-- --------------------------------------------------- -->
-        <mat-card class="b-1 shadow-none">
-          <mat-card-header>
+        <mat-card class="border! border-border! shadow-none mb-0!">
+          <div class="p-4">
             <mat-card-title>Two Line</mat-card-title>
-          </mat-card-header>
-          <mat-card-content class="b-t-1">
+          </div>
+          <mat-card-content class="border-t border-border">
             <mat-list>
               <mat-list-item>
-                <span matListItemTitle class="f-s-16 f-w-600">Title</span>
+                <span matListItemTitle class="text-base font-semibold">Title</span>
                 <span matListItemLine>Second line</span>
               </mat-list-item>
               <mat-list-item>
-                <span matListItemTitle class="f-s-16 f-w-600">Title</span>
+                <span matListItemTitle class="text-base font-semibold">Title</span>
                 <span matListItemLine>Second line</span>
               </mat-list-item>
             </mat-list>
@@ -45,23 +45,23 @@
         </mat-card>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-span-12 lg:col-span-6">
         <!-- --------------------------------------------------- -->
         <!-- two line -->
         <!-- --------------------------------------------------- -->
-        <mat-card class="b-1 shadow-none">
-          <mat-card-header>
+        <mat-card class="border! border-border! shadow-none mb-0!">
+          <div class="p-4">
             <mat-card-title>Three Line</mat-card-title>
-          </mat-card-header>
-          <mat-card-content class="b-t-1">
+          </div>
+          <mat-card-content class="border-t border-border">
             <mat-list>
               <mat-list-item>
-                <span matListItemTitle class="f-s-16 f-w-600">Title</span>
+                <span matListItemTitle class="text-base font-semibold">Title</span>
                 <span matListItemLine>Second line</span>
                 <span matListItemLine>Third line</span>
               </mat-list-item>
               <mat-list-item>
-                <span matListItemTitle class="f-s-16 f-w-600">Title</span>
+                <span matListItemTitle class="text-base font-semibold">Title</span>
                 <span matListItemLine>Second line. This line will truncate.</span>
                 <span>Third line</span>
               </mat-list-item>
@@ -70,25 +70,25 @@
         </mat-card>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-span-12 lg:col-span-6">
         <!-- --------------------------------------------------- -->
         <!-- two line -->
         <!-- --------------------------------------------------- -->
-        <mat-card class="b-1 shadow-none">
-          <mat-card-header>
+        <mat-card class="border! border-border! shadow-none mb-0!">
+          <div class="p-4">
             <mat-card-title>Three Line with Text wrapping</mat-card-title>
-          </mat-card-header>
-          <mat-card-content class="b-t-1">
+          </div>
+          <mat-card-content class="border-t border-border">
             <mat-list style="max-width: 500px">
               <mat-list-item lines="3">
-                <span matListItemTitle class="f-s-16 f-w-600">Title</span>
+                <span matListItemTitle class="text-base font-semibold">Title</span>
                 <span>Secondary line that will wrap because the list lines is
                   explicitly set to 3 lines. Text inside of a `matListItemTitle`
                   or `matListItemLine` will never wrap.
                 </span>
               </mat-list-item>
               <mat-list-item lines="3">
-                <span matListItemTitle class="f-s-16 f-w-600">Title</span>
+                <span matListItemTitle class="text-base font-semibold">Title</span>
                 <span>Secondary line that will wrap because the list lines is
                   explicitly set to 3 lines. Text inside of a `matListItemTitle`
                   or `matListItemLine` will never wrap.
@@ -99,15 +99,15 @@
         </mat-card>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-span-12 lg:col-span-6">
         <!-- --------------------------------------------------- -->
         <!-- List with Selection -->
         <!-- --------------------------------------------------- -->
-        <mat-card class="b-1 shadow-none">
-          <mat-card-header>
+        <mat-card class="border! border-border! shadow-none mb-0!">
+          <div class="p-4">
             <mat-card-title>List with Selection</mat-card-title>
-          </mat-card-header>
-          <mat-card-content class="b-t-1">
+          </div>
+          <mat-card-content class="border-t border-border">
             <mat-selection-list #shoes>
               @for(shoe of typesOfShoes; track shoe) {
               <mat-list-option>
@@ -116,22 +116,22 @@
               }
             </mat-selection-list>
 
-            <p class="f-w-600 p-16 bg-light-primary rounded">
+            <p class="font-semibold p-4 bg-light-primary rounded">
               Options selected: {{ shoes.selectedOptions.selected.length }}
             </p>
           </mat-card-content>
         </mat-card>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-span-12 lg:col-span-6">
         <!-- --------------------------------------------------- -->
         <!-- List with single Selection -->
         <!-- --------------------------------------------------- -->
-        <mat-card class="b-1 shadow-none">
-          <mat-card-header>
+        <mat-card class="border! border-border! shadow-none mb-0!">
+          <div class="p-4">
             <mat-card-title>List with single Selection</mat-card-title>
-          </mat-card-header>
-          <mat-card-content class="b-t-1">
+          </div>
+          <mat-card-content class="border-t border-border">
             <mat-selection-list #shoes2 [multiple]="false">
               @for(shoe of typesOfShoes; track shoe) {
               <mat-list-option [value]="shoe">
@@ -140,7 +140,7 @@
               }
             </mat-selection-list>
 
-            <p class="f-w-600 p-16 bg-light-primary rounded">
+            <p class="font-semibold p-4 bg-light-primary rounded">
               Option selected:
               {{
               shoes2.selectedOptions.hasValue()
@@ -152,38 +152,38 @@
         </mat-card>
       </div>
 
-      <div class="col-12">
+      <div class="col-span-12">
         <!-- --------------------------------------------------- -->
         <!-- List with sections -->
         <!-- --------------------------------------------------- -->
-        <mat-card class="b-1 shadow-none">
-          <mat-card-header>
+        <mat-card class="border! border-border! shadow-none mb-0!">
+          <div class="p-4">
             <mat-card-title>List with sections</mat-card-title>
-          </mat-card-header>
-          <mat-card-content class="b-t-1">
+          </div>
+          <mat-card-content class="border-t border-border">
             <mat-list>
-              <div mat-subheader class="m-b-16 f-w-600">Folders</div>
+              <div mat-subheader class="mb-4 font-semibold">Folders</div>
               @for(folder of folders; track folder.name) {
               <mat-list-item>
                 <mat-icon matListItemIcon>folder</mat-icon>
-                <div matListItemTitle class="f-w-600">
+                <div matListItemTitle class="font-semibold">
                   {{ folder.name }}
                 </div>
-                <div matListItemLine class="f-s-14 ">
+                <div matListItemLine class="text-sm ">
                   {{ folder.updated | date }}
                 </div>
               </mat-list-item>
               }
 
               <mat-divider></mat-divider>
-              <div mat-subheader class="m-y-16 f-w-600">Notes</div>
+              <div mat-subheader class="my-4 font-semibold">Notes</div>
               @for(note of notes; track note.name) {
               <mat-list-item>
                 <mat-icon matListItemIcon>note</mat-icon>
-                <div matListItemTitle class="f-w-600">
+                <div matListItemTitle class="font-semibold">
                   {{ note.name }}
                 </div>
-                <div matListItemLine class="f-s-14 ">
+                <div matListItemLine class="text-sm ">
                   {{ note.updated | date }}
                 </div>
               </mat-list-item>

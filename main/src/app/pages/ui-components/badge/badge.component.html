@@ -1,24 +1,24 @@
 <mat-card class="cardWithShadow theme-card">
-  <mat-card-header>
-    <mat-card-title class="m-b-0">Badges</mat-card-title>
-  </mat-card-header>
-  <mat-card-content class="b-t-1">
-    <mat-card class="b-1 shadow-none">
+  <div class="p-6 flex">
+    <mat-card-title class="mb-0">Badges</mat-card-title>
+  </div>
+  <mat-card-content class="border-t border-border pt-6">
+    <mat-card class="border! border-border! shadow-none">
       <mat-card-content>
-        <div matBadge="4" matBadgeOverlap="false" class="d-inline">Text with a badge</div>
+        <div matBadge="4" matBadgeOverlap="false" class="inline">Text with a badge</div>
       </mat-card-content>
     </mat-card>
 
-    <mat-card class="b-1 shadow-none">
+    <mat-card class="border! border-border! shadow-none">
       <mat-card-content>
-        <div matBadge="1" matBadgeSize="small" class="d-inline">Text with small badge</div><br /><br />
-        <div matBadge="1" matBadgeSize="large" class="d-inline">Text with large badge</div>
+        <div matBadge="1" matBadgeSize="small" class="inline ">Text with small badge</div><br /><br />
+        <div matBadge="1" matBadgeSize="large" class="inline">Text with large badge</div>
       </mat-card-content>
     </mat-card>
 
-    <mat-card class="b-1 shadow-none">
+    <mat-card class="border! border-border! shadow-none">
       <mat-card-content>
-        <p class="f-w-500 text-muted">
+        <p class="font-medium text-muted">
           Button with a badge on the left
           <button mat-flat-button color="primary" matBadge="8" matBadgePosition="before" matBadgeColor="accent">
             Action
@@ -27,16 +27,16 @@
       </mat-card-content>
     </mat-card>
 
-    <mat-card class="b-1 shadow-none">
+    <mat-card class="border! border-border! shadow-none">
       <mat-card-content>
-        <p class="f-w-500 text-muted">
+        <p class="font-medium text-muted">
           Icon with a badge
           <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
         </p>
       </mat-card-content>
     </mat-card>
 
-    <mat-card class="b-1 shadow-none">
+    <mat-card class="border! border-border! shadow-none">
       <mat-card-content>
         <p>
           Button toggles badge visibility

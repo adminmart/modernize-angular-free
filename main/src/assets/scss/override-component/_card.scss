@@ -7,22 +7,23 @@
     elevated-container-color: $white,
     title-text-size: 1.125rem,
     subtitle-text-size: 14px,
+    subtitle-text-color: var(--mat-sys-surface-container-lowest),
     title-text-line-height: 1.6rem,
     title-text-weight: 600,
     subtitle-text-weight: 400,
     elevated-container-shape: var(--mat-sys-corner-small),
     outlined-container-shape: var(--mat-sys-corner-small),
-    elevated-container-elevation: var(--mat-sys-level2),
+    elevated-container-elevation: var(--mat-sys-level1),
   )
 );
 
 // styles
 html {
   .mat-mdc-card {
-    margin-bottom: $card-spacer;
+    margin-bottom: 24px;
 
     .mat-mdc-card-header {
-      padding: 16px $card-spacer !important;
+      padding: $card-spacer $card-spacer 0 !important;
     }
 
     .mat-mdc-card-header + .mat-mdc-card-content {
@@ -30,7 +31,7 @@ html {
     }
 
     > .mat-mdc-card-content {
-      padding: $card-spacer !important;
+      padding: $card-spacer;
     }
 
     .mdc-card__actions {

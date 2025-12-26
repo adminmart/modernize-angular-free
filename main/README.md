@@ -1,2 +1,2 @@
-# Modernize-Angular-pro
-Modernize Angular Admin Dashboard
+# TailwindAdmin-Angular
+TailwindAdmin Angular

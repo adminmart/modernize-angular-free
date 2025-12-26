@@ -17,16 +17,27 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "allowedCommonJsDependencies": ["apexcharts", "bezier-easing", "moment"],
+            "allowedCommonJsDependencies": [
+              "bezier-easing"
+            ],
             "outputPath": {
               "base": "dist/Modernize"
             },
             "index": "src/index.html",
-            "polyfills": ["zone.js"],
+            "polyfills": [
+              "zone.js"
+            ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss", "src/assets/scss/style.scss"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/globals.css",
+              "src/styles.scss",
+              "src/assets/scss/style.scss"
+            ],
             "scripts": [],
             "browser": "src/main.ts"
           },
@@ -61,9 +72,6 @@
             "production": {
               "buildTarget": "Modernize:build:production"
             },
-            "hmr": {
-              "hmr": true
-            },
             "development": {
               "buildTarget": "Modernize:build:development"
             }
@@ -79,11 +87,19 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "polyfills": ["zone.js", "zone.js/testing"],
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
             "scripts": []
           }
         }

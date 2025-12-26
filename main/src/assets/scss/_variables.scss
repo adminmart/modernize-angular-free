@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 // font
-$font-family: "Plus Jakarta Sans", sans-serif;
+$font-family: "DM Sans", sans-serif;
 
 // light color variable
 
@@ -19,6 +19,7 @@ $primary: var(--mat-sys-primary);
 $secondary: var(--mat-sys-secondary);
 $accent: var(--mat-sys-secondary);
 $error: var(--mat-sys-error);
+$info: #539bff;
 $warning: #ffae1f;
 $success: #13deb9;
 $white: #ffffff;
@@ -30,7 +31,7 @@ $light-accent: var(--mat-sys-secondary-fixed-dim);
 $light-error: var(--mat-sys-error-fixed-dim);
 $light-warning: #ffad1f40;
 $light-success: #13deb940;
-$dark: #223742;
+$light-info: #8754ec26;
 
 // layout
 $boxedWidth: 1200px;

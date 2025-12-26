@@ -1,0 +1,27 @@
+<mat-card class="cardWithShadow mb-0!">
+  <mat-card-header class="pb-3">
+    <div class="flex justify-between items-center md:flex-nowrap flex-wrap w-full">
+      <div>
+        <mat-card-title>Revenue Updates</mat-card-title>
+        <mat-card-subtitle>Overview of Profit</mat-card-subtitle>
+      </div>
+      <div>
+        <mat-form-field class="theme-select" appearance="outline">
+          <mat-select value="mar">
+            @for(month of months; track month.viewValue ) {
+            <mat-option [value]="month.value">
+              {{ month.viewValue }}
+            </mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <apx-chart [series]="revenueChart.series" [dataLabels]="revenueChart.dataLabels" [chart]="revenueChart.chart"
+      [legend]="revenueChart.legend" [xaxis]="revenueChart.xaxis" [yaxis]="revenueChart.yaxis"
+      [grid]="revenueChart.grid" [stroke]="revenueChart.stroke" [tooltip]="revenueChart.tooltip"
+      [plotOptions]="revenueChart.plotOptions"></apx-chart>
+  </mat-card-content>
+</mat-card>

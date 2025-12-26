@@ -1,8 +1,10 @@
 @use "sass:map";
 @use "@angular/material" as mat;
 
-@include mat.table-overrides(
-  (
-    background-color: var(--mat-card-elevated-container-color),
-  )
-);
+@include mat.table-overrides((background-color: var(--mat-card-elevated-container-color),
+  ));
+
+.mdc-data-table__cell,
+.mdc-data-table__header-cell {
+  padding: 16px 16px !important;
+}

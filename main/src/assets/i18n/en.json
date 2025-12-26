@@ -1,7 +1,13 @@
 {
-  "Starter": "Starter",
+  "Home": "Home",
+  "Sample Page": "Sample Page",
+  "Auth": "Auth",
+  "Login": "Login",
+  "Register": "Register",
+  "Other": "Other",
   "Menu Level": "Menu Level",
-  "Menu 1": "Menu 1",
-  "Menu 2": "Menu 2",
-  "Disabled": "Disabled"
+  "Disabled": "Disabled",
+  "Chip": "Chip",
+  "Outlined": "Outlined",
+  "External Link": "External Link"
 }

@@ -10,14 +10,9 @@
 
 //container layout
 @use "layouts/transitions";
-@use "helpers/color";
-@use "helpers/border-color";
-@use "helpers/icon-size";
 @use "container";
 @use "layouts/layouts";
-@use "grid/grid";
-@use "helpers/custom-flex";
-@use "helpers/index";
+
 
 @use "pages/auth";
 @use "pages/dashboards";

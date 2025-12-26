@@ -16,5 +16,5 @@ import { CoreService } from 'src/app/services/core.service';
 })
 export class BrandingComponent {
   options = this.settings.getOptions();
-  constructor(private settings: CoreService) {}
+  constructor(private settings: CoreService) { }
 }

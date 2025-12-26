@@ -2,20 +2,20 @@ import { Injectable, signal } from '@angular/core';
 import { AppSettings, defaults } from '../config';
 
 @Injectable({
-    providedIn: 'root',
+  providedIn: 'root',
 })
 export class CoreService {
-    private optionsSignal = signal<AppSettings>(defaults);
+  private optionsSignal = signal<AppSettings>(defaults);
 
-    getOptions() {
-        return this.optionsSignal();
-    }
+  getOptions() {
+    return this.optionsSignal();
+  }
 
-    setOptions(options: Partial<AppSettings>) {
-        this.optionsSignal.update((current) => ({
-            ...current,
-            ...options,
-        }));
-    }
+  setOptions(options: Partial<AppSettings>) {
+    this.optionsSignal.update((current) => ({
+      ...current,
+      ...options,
+    }));
+  }
 
 }

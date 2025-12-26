@@ -5,111 +5,33 @@ html .topbar {
   top: 0;
   z-index: 9;
   height: $header-height;
+
+  i-tabler {
+    stroke-width: 1.5px;
+  }
+
+  .notification-badge {
+    .mat-badge-content {
+      left: 80%;
+      bottom: 85%;
+      width: 16px;
+      height: 16px;
+    }
+  }
 }
 
 .topbar-dd {
-  min-width: 220px !important;
+  min-width: 360px !important;
 }
 
-.upgrade-bg {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  height: 100%;
-}
-
-.object-cover {
-  object-fit: cover;
-}
-
-.profile-dd {
-  margin-top: -5px;
-  margin-left: -5px;
-}
-
-
-
-
-// App Topstrip
-
-.app-topstrip {
-  position: fixed;
-  top: 0;
-  z-index: 12;
-  display: flex;
-  background: linear-gradient(90deg, #001138 0%, #001E66 100%);
-
-  @media (max-width: 991px) {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .topstrip-right {
-    display: flex;
-
-    @media (max-width: 991px) {
-      flex-direction: column;
-      gap: 16px;
-    }
-  }
-
-  .topstrip-right-inner {
-    display: flex;
-
-    @media (max-width: 767px) {
-      flex-direction: column;
-      gap: 16px;
-    }
-  }
-
-  .linkbar {
-    border-left: 1px solid rgba(255, 255, 255, 0.4);
-    padding-left: 20px;
-  }
-
-  .text-linear-gradient {
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #FFFFFF 0%, #3772FF 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-  }
-
-  .live-preview-drop {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 4px;
-
-    &:hover,
-    &:active {
-      background-color: #3772FF;
+.dark-theme {
+  .topbar {
+    .mat-mdc-icon-button {
+      color: $dark-text-secondary !important;
     }
 
-  }
-
-  .get-pro-btn {
-    background-color: #3772FF;
-    border-radius: 4px;
-
-    &:hover {
-      background-color: #5D87FF;
+    .mdc-button {
+      --mat-button-text-label-text-color: $dark-text-secondary !important;
     }
   }
-
-  .link-hover {
-    height: auto;
-
-    &:hover,
-    &:active {
-      color: #5D87FF !important;
-
-      .mat-mdc-button-persistent-ripple {
-        &::before {
-          opacity: 0 !important;
-        }
-      }
-    }
-  }
-
 }

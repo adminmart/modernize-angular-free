@@ -2,9 +2,7 @@
 @use "@angular/material" as mat;
 @use "../variables" as *;
 
-@include mat.button-overrides(
-  (
-    protected-hover-container-elevation-shadow: var(--mat-sys-level1),
+@include mat.button-overrides((protected-hover-container-elevation-shadow: var(--mat-sys-level1),
     filled-horizontal-padding: 15px,
     outlined-horizontal-padding: 15px,
     protected-horizontal-padding: 15px,
@@ -13,17 +11,14 @@
     outlined-container-shape: var(--mat-sys-corner-small),
     protected-container-shape: var(--mat-sys-corner-small),
     text-container-shape: var(--mat-sys-corner-small),
-  )
-);
+  ));
 
-@include mat.icon-button-overrides(
-  (
-    icon-color: $text-color,
-  )
-);
+@include mat.icon-button-overrides((icon-color: $text-color,
+  ));
 
 // styles
 html {
+
   .mat-mdc-button-base.bg-light-primary:hover,
   .mat-mdc-button-base.bg-light-secondary:hover,
   .mat-mdc-button-base.bg-light-error:hover,
@@ -68,13 +63,13 @@ html {
 
   .mat-mdc-button-base.text-secondary:hover {
     .mat-mdc-button-persistent-ripple::before {
-      background-color: $secondary;
+      background-color: var(--mat-sys-secondary);
     }
   }
 
   .mat-mdc-button-base.text-error:hover {
     .mat-mdc-button-persistent-ripple::before {
-      background-color: $error;
+      background-color: var(--mat-sys-error);
     }
   }
 
@@ -96,7 +91,7 @@ html {
 
     &:hover {
       .mat-mdc-button-persistent-ripple::before {
-        background-color: $secondary;
+        background-color: var(--mat-sys-secondary);
       }
     }
   }
@@ -113,12 +108,12 @@ html {
   }
 
   .mat-mdc-outlined-button:not(:disabled).mat-error {
-    color: $error;
-    border-color: $error;
+    color: var(--mat-sys-error);
+    border-color: var(--mat-sys-error);
 
     &:hover {
       .mat-mdc-button-persistent-ripple::before {
-        background-color: $error;
+        background-color: var(--mat-sys-error);
       }
     }
   }
@@ -131,6 +126,27 @@ html {
       .mat-mdc-button-persistent-ripple::before {
         background-color: $warning;
       }
+    }
+  }
+
+  &.dark-theme .mat-mdc-icon-button:hover,
+  &.light-theme .mat-mdc-icon-button:hover {
+    color: var(--mat-sys-primary);
+
+    .mat-mdc-button-persistent-ripple::before {
+      background-color: var(--mat-sys-primary);
+    }
+  }
+
+  .mat-mdc-menu-item:not([disabled]):hover {
+    color: var(--mat-sys-primary);
+  }
+
+  .mat-mdc-nav-list .mat-mdc-list-item:hover {
+    color: var(--mat-sys-primary) !important;
+
+    .mdc-list-item__primary-text {
+      color: var(--mat-sys-primary) !important;
     }
   }
 }

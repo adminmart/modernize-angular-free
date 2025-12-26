@@ -1,13 +1,10 @@
 @use "sass:map";
 @use "@angular/material" as mat;
 
-@include mat.form-field-overrides(
-  (
-    container-height: 37px,
+@include mat.form-field-overrides((container-height: 37px,
     outlined-container-shape: var(--mat-sys-corner-small),
     container-vertical-padding: 6px,
-  )
-);
+  ));
 
 // forms
 html {
@@ -23,5 +20,9 @@ html {
 
   .demo-inline-calendar-card {
     width: 300px;
+  }
+
+  .mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field .mdc-notched-outline__notch {
+    border-right: 0;
   }
 }
